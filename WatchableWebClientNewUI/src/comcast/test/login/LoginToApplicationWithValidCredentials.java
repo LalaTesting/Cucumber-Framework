@@ -1,0 +1,108 @@
+package comcast.test.login;
+
+import static comcast.util.PropertyFileReader.ObjRepoProp;
+import static comcast.util.PropertyFileReader.TextProp;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import comcast.config.BaseTest;
+import comcast.custom.CustomFun;
+import comcast.pages.HomePage;
+
+/**
+ * 
+ * @author Manoj.Paragen 
+ * Description: This test script verify successful login to watchable application with valid credentials. 
+ *Created on 22-September-2016 
+ *Last updated on 22-September-2016
+ * 
+ */
+
+public class LoginToApplicationWithValidCredentials extends BaseTest {
+
+	static HomePage homePage;
+
+	/**
+	 * Open the browser, Enter the Watchable URL
+	 */
+	@Test(description = "Step 1: Open the browser, Enter the Watchable URL", priority = 1)
+	public void Step01_NavigeteToURL() throws Exception {
+
+		// Home page object instance creation
+		// homePage = new HomePage(driver);
+
+		// Navigates to Watchable application URL
+		homePage = HomePage.navigateToWatchableHomePage(driver, baseUrl);
+
+		log.info("Successfully navigated to Watchable Home page\n");
+		Reporter.log("<p>Successfully navigated to Watchable Home page");
+
+	}
+
+	/**
+	 * Verify LOG IN button
+	 */
+	@Test(description = "Step 2: Verify LOG IN button is present in header.", priority = 2)
+	public void Step02_VerifyLoginButton() throws Exception {
+
+		// Verify LOG IN button
+
+		Assert.assertTrue(CustomFun.isElementPresent(By.xpath(ObjRepoProp
+				.getProperty("homePageLoginButton_XPATH")), driver),
+				"LOG IN button is no present in header section of home page");
+
+		log.info("LOG IN button is present in header section of home page.\n");
+		Reporter.log("<p>LOG IN button is present in header section of home page.");
+
+	}
+	
+	/**
+	*Click on LOG IN button.
+	*/
+	
+	@Test(description = "Step 3: Click on LOG IN button.", priority = 3)
+	public void Step03_ClickOnLoginButton() throws Exception {
+
+		// Click on LOG IN button.
+		homePage.clickOnLoginButton();
+		
+		//Verify Login form is opened
+		Assert.assertTrue(driver.findElement(By.xpath(ObjRepoProp
+				.getProperty("loginForm_XPATH"))).isDisplayed(), "Login pop-up is not opened");
+
+		log.info("Successfully opened login pop-up.\n");
+		Reporter.log("<p>Successfully opened login pop-up.");
+
+	}
+
+	
+	
+	/**
+	 * Enter Username/Email, password and click on Log In button.
+	 */
+	@Test(description = "Step 4: Enter Username/Email, password and click on Log In button.", priority = 4)
+	public void Step04_EnterEamilPassClickOnLoginButton() throws Exception {
+		
+		String email = TextProp.getProperty("email");
+		String pass = TextProp.getProperty("password");
+
+		//Enter Username/Email, password
+		homePage.enterEmailPassword(email, pass);
+		
+		//Click on Login button
+		homePage.clickOnLoginFormLoginButton();
+		
+		// Verify Successful Login
+
+		Assert.assertTrue(CustomFun.isElementPresent(By.xpath(ObjRepoProp.getProperty("homePageLoginName_XPATH")), driver),"Failed to login to watchable application.");
+
+		log.info("User successfully login to application and the logged in user name displayed is t"+ driver.findElement(By.xpath(ObjRepoProp.getProperty("homePageLoginName_XPATH")))
+						.getText() + " \n");
+		
+		Reporter.log("<p>User successfully login to application and the logged in user name displayed is " + driver.findElement(By.xpath(ObjRepoProp.getProperty("homePageLoginName_XPATH"))).getText());
+
+	}
+
+	
+}

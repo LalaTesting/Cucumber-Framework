@@ -1,0 +1,552 @@
+package comcast.pages;
+
+import static comcast.util.PropertyFileReader.ObjRepoProp;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import comcast.common.asserts.pageAssertions.HomePageAssertions;
+import comcast.custom.CustomFun;
+import comcast.uiFunctions.GUIFunctions;
+
+public class HomePage {
+
+	private final WebDriver driver;
+	// For logging
+	public Logger log = Logger.getLogger(this.getClass().getName());
+
+	// Homepage Constructor
+	public HomePage(WebDriver driver) {
+
+		this.driver = driver;
+
+		// Check that we're on the right in Home Page.
+
+		if (!(CustomFun
+				.isElementPresent(
+						By.xpath(ObjRepoProp.getProperty("homePageType_XPATH")),
+						driver))) {
+
+			throw new IllegalStateException(
+					"This is not the Web clint home page");
+		}
+	}
+
+	By loginButton = By.xpath(ObjRepoProp
+			.getProperty("homePageLoginButton_XPATH"));
+	By loginEmailUserText = By.id(ObjRepoProp
+			.getProperty("loginFormEmailUserText_ID"));
+	By loginPasswordText = By.id(ObjRepoProp
+			.getProperty("loginFormPasswordText_ID"));
+	By loginFormloginButton = By.xpath(ObjRepoProp
+			.getProperty("loginFormLoginButton_XPATH"));
+	By todaysPlaylistsButton = By.xpath(ObjRepoProp
+			.getProperty("homePageWatchTodaysPlaylistsButton_XPATH"));
+	By exploreNowButton = By.xpath(ObjRepoProp
+			.getProperty("homePageExploreNowButton_XPATH"));
+	By playlistPlayIcon = By.xpath(ObjRepoProp
+			.getProperty("homePageSelectedPlaylistPlayIcon_XPATH"));
+	By firstVideoTitle = By.xpath(ObjRepoProp
+			.getProperty("homePageFirstVideoTitle_XPATH"));
+	By firstShowLogo = By.xpath(ObjRepoProp
+			.getProperty("homePageFirstShowLogo_XPATH"));
+	By hamburgerMenuIcon = By.xpath(ObjRepoProp
+			.getProperty("hamburgerMenuIcon_XPATH"));
+	By hamburgerMenuIconOpen = By.xpath(ObjRepoProp
+			.getProperty("hamburgerMenuIconOpen_XPATH"));
+	By playlistCarouselSecondPage = By.xpath(ObjRepoProp
+			.getProperty("playlistCarouselSecondPage_XPATH"));
+	By playlistCarouselFirstPage = By.xpath(ObjRepoProp
+			.getProperty("playlistCarouselFirstPage_XPATH"));
+	By firstVideoShowTitle = By.xpath(ObjRepoProp
+			.getProperty("homePageFirstVideoShowTitle_XPATH"));
+	By browseShowsMenu = By.xpath(ObjRepoProp
+			.getProperty("homePageHamburgerMenuBrowseShowsTitle_XPATH"));
+	By playlistsTitle = By.xpath(ObjRepoProp
+			.getProperty("homePageHamburgerMenuTodaysPlaylistsTitle_XPATH"));
+	By myShowsTitle = By.xpath(ObjRepoProp
+			.getProperty("homePageHamburgerMenuMyShowsTitle_XPATH"));
+	By signupButton = By.xpath(ObjRepoProp
+			.getProperty("homePageSignupButton_XPATH"));
+	By signUpFormCloseButton = By.xpath(ObjRepoProp
+			.getProperty("signUpFormCloseButton_XPATH"));
+	By getWatchingButton = By.xpath(ObjRepoProp
+			.getProperty("signUpFormGetWatchingButton_XPATH"));
+	By userNameText = By.id(ObjRepoProp
+			.getProperty("signUpFormUserNameText_ID"));
+	By userEmailText = By.id(ObjRepoProp
+			.getProperty("signUpFormUserEmailText_ID"));
+	By asswordText = By.id(ObjRepoProp
+			.getProperty("signUpFormPasswordText_ID"));
+	By termsConditionCheck = By.id(ObjRepoProp
+			.getProperty("signUpFormTermsConditionCheck_ID"));
+	
+	
+	
+	
+	
+
+	/*
+	 * *************************************************************************
+	 * 				Home Page Functions  	
+
+	 * *************************************************************************
+	 */
+
+	/**
+	 * This function navigates to Watchable application URL
+	 * 
+	 * 
+	 * @param baseUrl
+	 *            : Application URL
+	 * @return HomePage object
+	 * @throws Exception
+	 */
+	public static HomePage navigateToWatchableHomePage(WebDriver driver,
+			String baseUrl) throws Exception {
+
+		// Navigate to WATCHABLE URL
+		driver.get(baseUrl);
+		Thread.sleep(1000);
+
+		// Refresh Marketing page to navigate to WATCHABLE home page.
+
+		CustomFun.refreshPage(driver);
+
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function clicks on Log in button
+	 * 
+	 * @return: HomePage object
+	 */
+	public HomePage clickOnLoginButton() throws Exception {
+
+		// Click on login button
+		GUIFunctions.clickElement(driver, loginButton, "Login Button");
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+	
+	
+	/**
+	 * This function clicks on Sign Up button
+	 * 
+	 * @return: HomePage object
+	 */
+	public HomePage clickOnSignUpButton() throws Exception {
+
+		// Click on Sign Up button
+		GUIFunctions.clickElement(driver, signupButton, "Sign Up Button");
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+	
+	
+	/**
+	 * This function clicks on close button from sign up form
+	 * 
+	 * @return: HomePage object
+	 */
+	public HomePage clickOnSignUpFormCloseButton() throws Exception {
+
+		// Click on Sign Up form close button
+		GUIFunctions.clickElement(driver, signUpFormCloseButton, "Sign Up Close Button");
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+	
+	
+	/**
+	 * This function clicks on Get Watching button from sign up form
+	 * 
+	 * @return: HomePage object
+	 */
+	public HomePage clickOnGetWatchingButton() throws Exception {
+
+		// Click on Sign Up form Get Watching button
+		GUIFunctions.clickElement(driver, getWatchingButton, "Get Watching Button");
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+
+
+
+	/**
+	 * This function clicks on Log in button from login form
+	 * 
+	 * @return: HomePage object 
+	 * @throws Exception
+	 */
+	public HomePage clickOnLoginFormLoginButton() throws Exception {
+
+		// Click on login button
+		GUIFunctions.clickElement(driver, loginFormloginButton, "Login Form Login Button");
+
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function Enter email id and password in login form
+	 * 
+	 * @return: HomePage object
+	 */
+	public HomePage enterEmailPassword(String email, String pass)
+			throws Exception {
+
+		// Entering email
+		GUIFunctions.typeTxtboxValue(driver, loginEmailUserText, email);
+
+		// Entering password
+		GUIFunctions.typeTxtboxValue(driver, loginPasswordText, pass);
+		return new HomePage(driver);
+
+	}
+	
+	/**
+	 * This function Enter user name email id and password in sign up form
+	 * 
+	 * @return: HomePage object
+	 */
+	public HomePage enterUserNameEmailPassword(String userName, String email, String pass)
+			throws Exception {
+		
+		// Entering user name
+		GUIFunctions.typeTxtboxValue(driver, userNameText, userName);
+
+		// Entering email
+		GUIFunctions.typeTxtboxValue(driver, userEmailText, email);
+
+		// Entering password
+		GUIFunctions.typeTxtboxValue(driver, asswordText, pass);
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function click on hamburger menu
+	 * 
+	 * @return: Home Page object
+	 */
+	public HomePage clickOnHamburgerMenu() throws Exception {
+
+		// Click on hamburger menu
+		GUIFunctions.clickElement(driver, hamburgerMenuIcon, "Hamburger Menu");
+
+		Thread.sleep(2500);
+
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function click on hamburger menu close icon
+	 * 
+	 * @return: Home Page object
+	 */
+	public HomePage clickOnHamburgerMenuCloseIcon() throws Exception {
+
+		// Click on hamburger menu close icon
+		GUIFunctions.clickElement(driver, hamburgerMenuIconOpen,
+				"Hamburger Menu close icon");
+
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function clicks on Todays Playlists button
+	 * 
+	 * @return: PlaylistPage object
+	 */
+	public PlaylistPage clickOnTodaysPlaylistButton() throws Exception {
+
+		// Click on Todays Playlists button
+		GUIFunctions.clickElement(driver, todaysPlaylistsButton,
+				"Todays Playlists Button");
+		Thread.sleep(5000);
+
+		return new PlaylistPage(driver);
+
+	}
+
+	/**
+	 * This function clicks on Play icon from selected playlist
+	 * 
+	 * @return: WatchPage object
+	 */
+	public WatchPage clickOnPlaylistPlayIcon() throws Exception {
+
+		// Click on Play icon from playlist
+		GUIFunctions.clickElement(driver, playlistPlayIcon,
+				"Playlist Play Icon");
+		Thread.sleep(25000);
+
+		return new WatchPage(driver);
+
+	}
+
+	/**
+	 * This function clicks on First video title from what we are watching
+	 * section
+	 * 
+	 * @return: WatchPage object
+	 */
+	public WatchPage clickOnFirstVideoTitle() throws Exception {
+
+		// Click on First video title
+		Thread.sleep(3000);
+		GUIFunctions.clickElement(driver, firstVideoTitle, "First Video Title");
+		Thread.sleep(25000);
+
+		return new WatchPage(driver);
+
+	}
+
+	/**
+	 * This function clicks on First show image from get to know the show
+	 * section
+	 * 
+	 * @return: WatchPage object
+	 */
+	public ShowPage clickOnFirstShowLogo() throws Exception {
+
+		// Click on First show logo
+		Thread.sleep(3000);
+		GUIFunctions.clickElement(driver, firstShowLogo, "First Show Logo");
+		Thread.sleep(5000);
+
+		return new ShowPage(driver);
+
+	}
+	
+	
+	
+	/**
+	 * This function clicks on First show title from what we are watching
+	 * section
+	 * 
+	 * @return: WatchPage object
+	 */
+	public ShowPage clickOnFirstShowTitle() throws Exception {
+
+		// Click on First show Title
+		Thread.sleep(3000);
+		GUIFunctions.clickElement(driver, firstVideoShowTitle, "First Show Title");
+		Thread.sleep(5000);
+
+		return new ShowPage(driver);
+
+	}
+	
+
+	/**
+	 * This function clicks on Todays Playlists button 
+	 * 
+	 * @return: PlaylistPage object
+	 */
+	public BrowseShowsPage clickOnExploreNowButton() throws Exception {
+
+		// Click on Todays Playlists button
+
+		GUIFunctions.clickElement(driver, exploreNowButton,
+				"Explore Now Button");
+		Thread.sleep(5000);
+
+		return new BrowseShowsPage(driver);
+		
+	}
+		
+		/**
+		 * This function clicks on browse shows menu 
+		 * 
+		 * @return: browse shows object
+		 */
+		public BrowseShowsPage clickOnBrowseShowsMenu() throws Exception {
+
+			// Click on browse shows menu
+
+			GUIFunctions.clickElement(driver, browseShowsMenu,
+					"Browse Shows Menu");
+			Thread.sleep(5000);
+
+			return new BrowseShowsPage(driver);
+
+	}
+		
+		/**
+		 * This function clicks on Todays Playlists menu 
+		 * 
+		 * @return: PlaylistPage object
+		 */
+		public PlaylistPage clickOnTodaysPlaylistsMenu() throws Exception {
+
+			// Click on Todays Playlists menu
+
+			GUIFunctions.clickElement(driver, playlistsTitle,
+					"Todays Playlists Menu");
+			Thread.sleep(5000);
+
+			return new PlaylistPage(driver);
+
+	}
+		
+		
+		/**
+		 * This function clicks on my shows menu 
+		 * 
+		 * @return: MyShowsPage object
+		 */
+		public MyShowsPage clickOnMyShowsMenu() throws Exception {
+
+			// Click on my shows menu
+
+			GUIFunctions.clickElement(driver, myShowsTitle,
+					"My Shows Menu");
+			Thread.sleep(5000);
+
+			return new MyShowsPage(driver);
+
+	}
+
+	/**
+	 * This function clicks on next page icon from playlist carousel
+	 * 
+	 * @return: Home Page object
+	 */
+	public HomePage clickOnNexPageIconFromPlaylistCarousel() throws Exception {
+
+		// Click on next page icon from playlist carousel
+
+		GUIFunctions.clickElement(driver, playlistCarouselSecondPage,
+				"Next Page icon");
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function clicks on previous page icon from playlist carousel
+	 * 
+	 * @return: Home Page object
+	 */
+	public HomePage clickOnPreviousPageIconFromPlaylistCarousel()
+			throws Exception {
+
+		// Click on previous page icon from playlist carousel
+
+		GUIFunctions.clickElement(driver, playlistCarouselFirstPage,
+				"Previous Page icon");
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+
+	/**
+	 * This function Login to Webclient Application
+	 * 
+	 * @return: Home Page object
+	 */
+	public HomePage loginToWebClient(String email, String pass)
+			throws Exception {
+
+		// Click on Login button
+		GUIFunctions.clickElement(driver, loginButton, "Login Button");
+		Thread.sleep(1000);
+
+		// Entering email
+		GUIFunctions.typeTxtboxValue(driver, loginEmailUserText, email);
+
+		// Entering password
+		GUIFunctions.typeTxtboxValue(driver, loginPasswordText, pass);
+
+		// Click on login button
+		GUIFunctions.clickElement(driver, loginFormloginButton, "Login Button");
+
+		// Verify Successful Login
+		HomePageAssertions.verifySuccessfulLogin(driver);
+		Thread.sleep(5000);
+
+		return new HomePage(driver);
+
+	}
+	
+	
+	
+	/**
+	 * This function clicks on my shows menu 
+	 * 
+	 * @return: MyShowsPage object
+	 */
+	public void clickOnMyShowsMenuWithOutLogin() throws Exception {
+
+		// Click on my shows menu
+
+		GUIFunctions.clickElement(driver, myShowsTitle,
+				"My Shows Menu");
+		Thread.sleep(5000);
+
+		
+
+}
+	
+	
+	/**
+	 * This function Login to Webclient Application
+	 * 
+	 * @return: Home Page object
+	 */
+	public MyShowsPage loginToWebClientFromPopUp(String email, String pass)
+			throws Exception {
+
+		// Entering email
+		GUIFunctions.typeTxtboxValue(driver, loginEmailUserText, email);
+
+		// Entering password
+		GUIFunctions.typeTxtboxValue(driver, loginPasswordText, pass);
+
+		// Click on login button
+		GUIFunctions.clickElement(driver, loginFormloginButton, "Login Button");
+		Thread.sleep(10000);
+
+		return new MyShowsPage(driver);
+
+	}
+	
+	/*
+	 * This function select terms of service and privacy policy check box
+	 * 
+	 * @return: Home Page object
+	 */
+	public HomePage selectTermsServicePrivacyPolicy() throws Exception {
+
+		// Select terms of service and Privacy policy
+		//GUIFunctions.clickElement(driver, termsConditionCheck, "Terms of Service Privacy Policy");
+		GUIFunctions.mouseOverElementAndClick(driver, driver.findElement(By
+				.id(ObjRepoProp.getProperty("signUpFormTermsConditionCheck_ID"))),
+				"Terms of Service Privacy Policy");
+		Thread.sleep(2500);
+
+		return new HomePage(driver);
+
+	}
+	
+}

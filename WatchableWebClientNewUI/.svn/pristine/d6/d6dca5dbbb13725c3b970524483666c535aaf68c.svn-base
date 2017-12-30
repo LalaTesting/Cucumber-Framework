@@ -1,0 +1,27 @@
+#Valid login credentials
+email = test_hotfix8_9_10_11@gmail.com
+password = Demo1111
+invalidpass = Demo11112222
+invalidemail = manoj498rediffmail.com.
+validemail = manoj498@rediffmail.com
+invalidsignupPass = abc
+username = test_hotfix8_9_10_11
+invalidusername = abcd
+usernameWithoutLettersNumbersUnderscores = !@#$%^&*?+-)(
+sigmupemail = test310@gmail.com
+sigmupinvalidemail = test310gmail.com
+nofollowedshows = test_nofollowedshows@gmail.com
+url = http://qa3web.xidio.net
+#url = http://watchable.com
+followingText = Following
+unfollowText = Unfollow
+followText = Follow
+url = http://qa3web.xidio.net
+#url = http://watchable.com
+#driverName can be CHROME, FF, IE & SAFARI
+driverName=CHROME
+#driverName=IE
+driverName = CHROME
+#driverName = FF
+# OS can be WINDOWS & MAC
+os = WINDOWS

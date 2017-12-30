@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Watchable Web Client Automation - Functional Suite">
+	<test name="VerifyShowPageContents">
+		<classes>
+			<class name="comcast.test.showpage.VerifyShowPageContents" />
+		</classes>
+	</test> <!-- VerifyShowPageContents -->
+	<test name="VerifyNavigationToShowPageFromWhatWeAreWatchingSection">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyNavigationToShowPageFromWhatWeAreWatchingSection" />
+		</classes>
+	</test> <!-- VerifyNavigationToShowPageFromWhatWeAreWatchingSection -->
+	<test name="VerifyNavigationToProviderPageFromShowPage">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyNavigationToProviderPageFromShowPage" />
+		</classes>
+	</test> <!-- VerifyNavigationToProviderPageFromShowPage -->
+	<test name="VerifyDetailsOnSingleVideoInShowPage">
+		<classes>
+			<class name="comcast.test.showpage.VerifyDetailsOnSingleVideoInShowPage" />
+		</classes>
+	</test> <!-- VerifyDetailsOnSingleVideoInShowPage -->
+	<test name="VerifyShowPageTitle">
+		<classes>
+			<class name="comcast.test.showpage.VerifyShowPageTitle" />
+		</classes>
+	</test> <!-- VerifyShowPageTitle -->
+	<test name="VerifyLogoutFromShowPageNavigatingToHomePage">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyLogoutFromShowPageNavigatingToHomePage" />
+		</classes>
+	</test> <!-- VerifyLogoutFromShowPageNavigatingToHomePage -->
+	<test
+		name="VerifyNavigatingToHomePageFromShowPageClickingOnTopWatchableLogo">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyNavigatingToHomePageFromShowPageClickingOnTopWatchableLogo" />
+		</classes>
+	</test> <!-- VerifyNavigatingToHomePageFromShowPageClickingOnTopWatchableLogo -->
+	<test
+		name="VerifyNavigatingToHomePageFromShowPageClickingOnBottomWatchableLogo">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyNavigatingToHomePageFromShowPageClickingOnBottomWatchableLogo" />
+		</classes>
+	</test> <!-- VerifyNavigatingToHomePageFromShowPageClickingOnBottomWatchableLogo -->
+	<test name="VerifyNavigatingToHomePageFromShowPageClickingOnHomeFooterLink">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyNavigatingToHomePageFromShowPageClickingOnHomeFooterLink" />
+		</classes>
+	</test> <!-- VerifyNavigatingToHomePageFromShowPageClickingOnHomeFooterLink -->
+	<test name="VerifyLazyLoadingFunctionalityOfVideos">
+		<classes>
+			<class
+				name="comcast.test.showpage.VerifyLazyLoadingFunctionalityOfVideos" />
+		</classes>
+	</test> <!-- VerifyLazyLoadingFunctionalityOfVideos -->
+	<test name="VerifyNavigatingWatchPageFromShowPage">
+		<classes>
+			<class name="comcast.test.showpage.VerifyNavigatingWatchPageFromShowPage" />
+		</classes>
+	</test> <!-- VerifyNavigatingWatchPageFromShowPage -->
+
+</suite> <!-- Watchable Web Client Automation -->
+

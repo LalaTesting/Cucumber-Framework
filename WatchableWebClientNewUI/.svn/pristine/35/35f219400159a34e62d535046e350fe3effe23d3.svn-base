@@ -1,0 +1,314 @@
+
+#*********************************************************************************************************************
+
+#								WATCHABLE NEW WEB CLIENT UI OBJECTS
+
+#***********************************************************************************************************************
+
+#***********************************************************************************************************************
+#                          PageObjectVerification [ACROSS ALL THE PAGES]
+#***********************************************************************************************************************
+homePageType_XPATH = //meta[@content='Home Page']
+showPageType_XPATH = //meta[@content='Show Page']
+providerPageType_XPATH = //meta[@content='Provider Page']
+playlistPageType_XPATH = //meta[contains(@content, 'Playlists Page')]
+browseShowsPageType_XPATH = //meta[@content='Browse Shows Page']
+myShowsPageType_XPATH = //meta[@content='My Shows Page']
+helpPageType_XPATH = //meta[@content='FAQ Page']
+watchPageType_XPATH = //meta[contains(@content, 'Watch Page')]
+searchResultsPageType_XPATH = //meta[@content='Search Results Page']
+
+
+#*********************************************************************************************************************
+#													HOME PAGE OBJECTS
+#***********************************************************************************************************************
+homePageHomeIcon_XPATH = //div[@class='home_icon']
+homePageHeaderSection_XPATH = //div[contains(@class, 'menu_list')]
+homePagePlaylistSection_XPATH = //div[@id='featured_playlist']/descendant::ul
+homePagePlaylistLogoImage_XPATH = //div[@id='featured_playlist']/descendant::li[contains(@class, 'featured_playlist')]
+homePageVideoLogoImage_XPATH = //div[@id='featured_videos']/descendant::div[contains(@class,'featured_list')]
+homePageWhatWeAreWatchingSection_XPATH = //div[@id='featured_videos']
+homePageShowSectionTitle_XPATH = //div[@id='popular_channels'][@class = 'section_container homepage_video clearfix']/descendant::h1/descendant::span
+homePageVideoSectionTitle_XPATH =  //div[@id='featured']/descendant::h1/descendant::span
+homePageWatchTodaysPlaylistsButton_XPATH = //div[@id='featured']/descendant::div[@class='more_btn']/descendant::a
+homePageGetToKnowTheShowSection_XPATH = //div[@id='popular_center']
+homePageShowLogoImage_XPATH = //div[@id='ShowBox']/descendant::div[contains(@class, 'ShowColumn ')]/descendant::a[@class='logo']
+homePageExploreNowButton_XPATH = //div[@id='popular_channels']/descendant::div[@class='more_btn']/descendant::a
+homePageStayConnectedSection_XPATH = //section[contains(@class,'stay_connected')]
+homePageSoocialSharingSection_XPATH = //div[@class='follow_icon']
+homePageFooterWatchableLogo_XPATH = //div[@class='footer-section']/descendant::a[contains(@class,'footer-logo')]
+homePageDownloadBadge_XPATH = //div[@class='footer-section']/descendant::div[@class='download-badges']
+homePageFooterSection_XPATH = //div[@class='footer-section']/descendant::ul[contains(@class,'footer')]
+homePageFooterHomeLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='Home']
+homePageFooterLearnMoreLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='Learn More']
+homePageFooterHelpLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='Help']
+homePageFooterContactUsLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='Contact Us']
+homePageFooterPrivacyPolicyLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='Privacy Policy']
+homePageFooterTermsOfServiceLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='Terms of Service']
+homePageFooterAdChoicesLink_XPATH = //div[@class='footer-section']/descendant::a[@data-letters='AdChoices']
+homePageFooterCopyrightText_XPATH = //div[@class='footer-section']/descendant::div[contains(@class,'copyright')]
+homePageLoginButton_XPATH = //li[@id='buttons']/descendant::div[@class='user_btn log_in_icon']
+homePageSignupButton_XPATH = //li[@id='buttons']/descendant::div[@class='user_btn sign_up_icon']
+homePageSearchButton_XPATH = //section[@id='userBarView']/descendant::div[@class='search_btn_out']
+homePageLoginName_XPATH =  //li[@id='buttons']/descendant::div[contains(@class,'user_profile')]/descendant::span[@class='user_profile_name']
+homePageUserProfileIcon_XPATH =  //li[@id='buttons']/descendant::span[@class='user_profile_name']/descendant::img
+hamburgerMenuIcon_XPATH = //div[contains(@id,'nav-icon')]
+hamburgerMenuIconOpen_XPATH = //div[contains(@id,'nav-icon')][@class='open']
+headeMenuSection_XPATH = //ul[@class='header clearfix open_container']
+homePageHomeHeadingText_XPATH = //section[@id='userBarView']/descendant::div[@class='home_icon']
+homePageHeaderWatchableLogo_XPATH = //li[@id='logo']/descendant::img[contains(@class,'normal')]
+playlistCarouselPagination_XPATH = //div[@id='featured_playlist']/descendant::div[contains(@class,'pagination')]
+playlistCarouselPages_XPATH = //div[@id='featured_playlist']/descendant::div[contains(@class,'pagination')]/descendant::a
+playlistCarouselFirstPage_XPATH = //div[@id='featured_playlist']/descendant::div[contains(@class,'pagination')]/descendant::a[@href='#1']
+playlistCarouselSecondPage_XPATH = //div[@id='featured_playlist']/descendant::div[contains(@class,'pagination')]/descendant::a[@href='#2']
+playlistCarouselActivePage_XPATH = //div[@id='featured_playlist']/descendant::div[contains(@class,'pagination')]/descendant::a[@class='active']
+homePageInstagramIcon_XPATH = //a[@id='ins_icon']/descendant::img
+homePageInstagramLabel_XPATH = //a[@id='ins_icon']/descendant::span
+homePageFaceboobIcon_XPATH = //a[@id='fb_icon']/descendant::img
+homePageFaceboobLabel_XPATH = //a[@id='fb_icon']/descendant::span
+homePageTwitterIcon_XPATH = //a[@id='tw_icon']/descendant::img
+homePageTwitterLabel_XPATH = //a[@id='tw_icon']/descendant::span
+homePageStayConnectedInstagramImage_XPATH = //div[@id='featured_instagram']/descendant::li/descendant::img
+homePageStayConnectedTitle_XPATH = //div[@id='popular_channels']/descendant::section[contains(@class,'stay_connected')]/descendant::h1
+homePageStayConnectedSubTitle_XPATH = //div[@id='popular_channels']/descendant::div[@class='stay_connected_subtitle']
+homePageStayConnectedInstagramImg_XPATH = //div[@id='featured_instagram']/descendant::ul[contains(@class,'popular_instagram')]/descendant::li
+homePageStayConnectedInstagramImgPartOne_XPATH = //div[@id='featured_instagram']/descendant::ul[contains(@class,'popular_instagram')]/descendant::li[
+homePageStayConnectedInstagramImgPartTwo_XPATH = ]/descendant::a/descendant::img
+homePageDownloadBadgeAppStoreImg_XPATH = //div[@class='footer-section']/descendant::div[@class='download-badges']/descendant::a[contains(@href,'apple')]/descendant::img
+homePageDownloadBadgeGooglePlayImg_XPATH = //div[@class='footer-section']/descendant::div[@class='download-badges']/descendant::a[contains(@href,'google')]/descendant::img
+homePageDownloadBadgeXfinityImg_XPATH = //div[@class='footer-section']/descendant::div[@class='download-badges']/descendant::a[contains(@href,'xfinity')]/descendant::img
+homePageSelectedPlaylistPlayIcon_XPATH = //div[@id='jcarouselHome']/descendant::div[contains(@class, 'selected')]/descendant::div[contains(@class, 'playicon')]
+homePageSelectedPlaylistTitle_XPATH = //div[@id='jcarouselHome']/descendant::div[contains(@class, 'selected')]/descendant::h2
+homePageSelectedPlaylistDescription_XPATH = //div[@id='jcarouselHome']/descendant::div[contains(@class, 'selected')]/descendant::p
+homePageSelectedPlaylistCategoty_XPATH = //div[@id='jcarouselHome']/descendant::div[contains(@class, 'selected')]/descendant::div[@class='playlist_data']/descendant::span[1]
+homePageSelectedPlaylistVideoCount_XPATH = //div[@id='jcarouselHome']/descendant::div[contains(@class, 'selected')]/descendant::div[@class='playlist_data']/descendant::span[2]
+#homePageFirstVideoTitle_XPATH = //div[@id='featured_videos']/descendant::p[1]/descendant::a
+homePageFirstVideoTitle_XPATH = //div[@id='featured_videos']/descendant::p[2]/descendant::a
+homePageFirstVideoShowTitle_XPATH = //div[@class='featured_cluster_playlist']/descendant::article/descendant::div[@class='subtitle']/descendant::a
+homePageFirstVideoLastUpdateInfo_XPATH = //div[@class='featured_cluster_playlist']/descendant::article/descendant::div[@class='subtitle']/descendant::span[2]
+homePageFirstVideoDuration_XPATH = //div[@class='featured_cluster_playlist']/descendant::article/descendant::div[@class='duration']
+homePageFirstShowLogo_XPATH = //div[@id='ShowBox']/descendant::div[1]/descendant::div[contains(@class,'ShowColumn')]/descendant::a[1]
+homePageFirstShowTitle_XPATH = //div[@id='ShowBox']/descendant::div[1]/descendant::div[contains(@class,'ShowColumn')]/descendant::a[1]/descendant::img
+homePageHeaderSectionHomePageTitle_XPATH = //div[@class='home_icon']
+homePageHamburgerMenuHomeTitle_ID = //li[@id='home']
+homePageHamburgerMenuBrowseShowsTitle_XPATH = //ul[@class='header clearfix open_container']/descendant::li[@id='bs']
+homePageHamburgerMenuTodaysPlaylistsTitle_XPATH = //ul[@class='header clearfix open_container']/descendant::li[@id='ap']
+homePageHamburgerMenuMyShowsTitle_XPATH = //ul[@class='header clearfix open_container']/descendant::li[@id='ms']
+homePageHamburgerMenuLogin_XPATH = //ul[@class='header clearfix open_container']/descendant::li[@class='optional_tab log_in_icon']/descendant::a
+homePageHamburgerMenuSignUp_XPATH = //ul[@class='header clearfix open_container']/descendant::li[@id='sign_up_icon']/descendant::a
+homePageHamburgerMenuUserName_XPATH = //ul[@class='header clearfix open_container']/descendant::li[@class='greetings_fmt']/descendant::span[@class='user_profile_name_open']
+homePageShowNameOnShowLogo_XPATH = //div[@id='ShowBox']/descendant::div[contains(@class, 'ShowColumn ')]/descendant::a[@class='logo']/descendant::figure/descendant::img
+homePageArrowIcon_XPATH = //span[@class='arrow']/descendant::img
+homePageShowLogoPartOne_XPATH = //div[@id='ShowBox']/descendant::a[
+homePageShowLogoPartTwo_XPATH = ]/descendant::img
+
+
+#*********************************************************************************************************************
+#													LOGIN FORM OBJECTS
+#***********************************************************************************************************************
+loginForm_XPATH = //section[@id='signInView']/descendant::div[@class='register-user login']
+loginFormEmailUserText_ID = login_username
+loginFormPasswordText_ID = login_psd
+loginFormLoginButton_XPATH = //form[@id='login']/descendant::button[@id='user_login']
+logoutMenu_XPATH = //li[@id='buttons']/descendant::div[contains(@class,'user_profile')]/descendant::ul[@class='user_profile_menu']/descendant::li[@class='user_icon logOut']
+
+
+#*********************************************************************************************************************
+#													SHOW PAGE OBJECTS
+#***********************************************************************************************************************
+showPageShowHeadingText_XPATH = //section[@id='userBarView']/descendant::div[contains(@class,'home_icon')]
+showPageShowTitle_XPATH = //div[@id='channel_section']/descendant::h1
+showPagePublisherTitle_XPATH = //div[@id='channel_section']/descendant::h4/descendant::a
+showPageShowLogo_XPATH = //div[@id='channel_section']/descendant::div[@class='channel_img']/descendant::img
+showPageFollowButton_XPATH = //span[@id='showPage_follow_button']/descendant::div[contains(@class,'Subscribe')]/descendant::a
+showPageShowDescription_XPATH = //div[@id='channel_section']/descendant::p
+showPageVideoSectionTitle_XPATH = //div[@id='content-wrap']/descendant::h1/descendant::span
+showPageVideoIcon_XPATH = //div[@id='featured_videos']/descendant::li/descendant::figure/descendant::img
+showPageFirstVideoTitle_XPATH = //div[@id='featured_videos']/descendant::li[1]/descendant::p[@class='featured_metadata_title']/descendant::a
+showPageFirstVideoShowTitle_XPATH = //div[@id='featured_videos']/descendant::li[1]/descendant::div[@class='subtitle']/descendant::a
+showPageFirstVideoUpdated_XPATH = //div[@id='featured_videos']/descendant::li[1]/descendant::div[@class='subtitle']/descendant::span[2]
+showPageFirstVideoDuration_XPATH = //div[@id='featured_videos']/descendant::li[1]/descendant::div[@class='duration']
+showPageVideoCountValue_CSS = div > h4
+showPageTitleForVideoSection_XPATH = //span[@class='home_page_header_title']
+showPageVideoCount_XPATH = //div[@class='slider']/descendant::li
+showPageHeaderWatchableLogo_XPATH = //li[@id='logo']/descendant::img[contains(@class,'marketing')]
+showPageLoginName_XPATH = //li[@id='buttons']/descendant::div[contains(@class,'user_profile')]/descendant::span[@class='user_profile_name grey_text']
+showPageDownArrow_XPATH = //li[@id='buttons']/descendant::span[@class='user_profile_name grey_text']/descendant::img
+
+#*********************************************************************************************************************
+#													PROVIDER PAGE OBJECTS
+#*********************************************************************************************************************
+
+providerPageShowSection_XPATH = //div[@id='provider_channels']/descendant::div[contains(@class, 'channel_list')]
+providerPageShowLogo_XPATH = //div[@id='provider_channels']/descendant::li[@class='popular_list']/descendant::a[@class='logo']/descendant::img
+providerPageFirstShowLogo_XPATH = //div[@id='provider_channels']/descendant::li[1]/descendant::a[@class='logo']/descendant::img
+providerPageProviderLogo_XPATH = //div[@class='provider_img']/descendant::img
+providerPageProviderName_XPATH = //div[@class='provider_description']/descendant::h1
+providerPageProviderDescription_XPATH = //div[@class='provider_description']/descendant::p[@class='description']
+providerPageShowTitle_XPATH = //div[@id='content-wrap']/descendant::span
+providerPageShowImages_XPATH = //div[@id='provider_channels']/descendant::div[contains(@class, 'channel_list')]/descendant::li[@class='popular_list']
+providerPageShowImagePartOne_XPATH = //div[@id='provider_channels']/descendant::li[@class='popular_list'][
+providerPageShowImagePartTwo_XPATH = ]/descendant::a[@class='logo']/descendant::img
+providerPageFirstShowImage_XPATH = //div[@id='provider_channels']/descendant::li[@class='popular_list'][1]
+
+
+#*********************************************************************************************************************
+#													BROWSE SHOWS PAGE OBJECTS
+#*********************************************************************************************************************
+browseShowsPageShowImage_XPATH = //div[@id='channels_by_genre']/descendant::li[@class='popular_list']/descendant::a[@class='logo']/descendant::img
+browseShowsPageFirstShowImage_XPATH = //div[@id='channels_by_genre']/descendant::li[1]/descendant::a[@class='logo']/descendant::img
+browseShowsPageHeading_XPATH = //div[contains(@class, 'menu_list')]/descendant::div[@class='home_icon grey_text']
+browseShowsPageShowsImage_XPATH = //div[contains(@class, 'list1')]/descendant::li[@class='popular_list']
+browseShowsPageMoreShowsLink_XPATH = //div[@class='genre list1']/descendant::div[@class='expandable']
+browseShowsPageFirstShowsRowImage_XPATH = //div[contains(@class, 'list1')]/descendant::li[@class='popular_list']
+browseShowsPageFirstMoreShowsRowLink_XPATH = //div[@class='genre list1']/descendant::div[@class='expandable']
+browseShowsPageMoreShowsValueLink_XPATH = //div[@class='expandable']
+browseShowsPageGenreTitle_XPATH = //div[@id='channels_by_genre']/descendant::div[contains(@class, 'list')]/descendant::h1
+browseShowsPageGenreTitlePartOne_XPATH = //div[@id='channels_by_genre']/descendant::div[@class='genre list
+browseShowsPageGenreTitlePartTwo_XPATH = ']/descendant::h1
+browseShowsPageGenreMoreShowsLink_XPATH = //div[@id='channels_by_genre']/descendant::div[contains(@class, 'list')]/descendant::div[@class='expandable']
+
+#*********************************************************************************************************************
+#													TODAY'S PLAYLISTS PAGE OBJECTS
+#*********************************************************************************************************************
+playlistsPagePlaylistImage_XPATH = //div[@id='featured_playlist']/descendant::div[contains(@class, 'genre list')]/descendant::figure/descendant::img
+playlistsPageHeading_XPATH = //div[contains(@class, 'menu_list')]/descendant::div[@class='home_icon grey_text']
+playlistsPageFirstPlaylistPlayIcon_XPATH = //div[@id='featured_playlist']/descendant::div[1]/descendant::div[@class='pl_hover_layer']/descendant::img
+playlistsPageFirstPlaylistName_XPATH = //div[@id='featured_playlist']/descendant::div[1]/descendant::div[@class='pl_subtitle']/descendant::a[1]
+playlistsPageFirstPlaylistGenreTitle_XPATH = //div[@id='featured_playlist']/descendant::div[1]/descendant::div[@class='pl_subtitle']/descendant::a[2]
+playlistsPageFirstPlaylistDecription_XPATH = //div[@id='featured_playlist']/descendant::div[1]/descendant::div[@class='featured_metadata']/descendant::a
+playlistsPageFirstPlaylistVideoCount_XPATH = //div[@id='featured_playlist']/descendant::div[1]/descendant::div[@class='duration']/descendant::span
+playlistsPageFirstPlaylistLogo_XPATH = //div[@id='featured_playlist']/descendant::div[1]/descendant::figure/descendant::img[@class='PlaylistImg'][contains(@src,'https')]
+playlistsPageFooterSection_XPATH = //div[@class='footer-section']
+playlistsPagePlaylistName_XPATH = //div[contains(@class, 'genre')]/descendant::div[@class='pl_subtitle']/descendant::a[1]
+playlistsPagePlaylistNamePartOne_XPATH = //div[@id='featured_playlist']/descendant::div[@class='all_playlists'][
+playlistsPagePlaylistNamePartTwo_XPATH = ]/descendant::div[@class='pl_subtitle']/descendant::a[1]
+
+#*********************************************************************************************************************
+#													MY SHOWS PAGE OBJECTS
+#*********************************************************************************************************************
+myShowsPageHeading_XPATH = //div[contains(@class, 'menu_list')]/descendant::div[@class='home_icon grey_text']
+myShowsPageShowTitle_XPATH = //div[@id='featured_channels']/descendant::div[contains(@class,'video_list')]/descendant::div[contains(@class,'genre list')]/descendant::h1/descendant::a
+myShowsPageFirstShowTitle_XPATH = //div[@id='featured_channels']/descendant::div[contains(@class,'video_list')]/descendant::div[@class='genre list0']/descendant::h1/descendant::a
+myShowsPageHereLink_XPATH = //div[@id='error_section']/descendant::div[@class='sub_error']/descendant::a
+myShowsPageMessageTitle_XPATH = //div[@id='error_section']/descendant::h1
+myShowsPageMessage_XPATH = //div[@id='error_section']/descendant::div[@class='sub_error']
+myShowsPageGetToKnowTheShowSection_XPATH = //div[@id='ShowBox']
+myShowsPageGetToKnowTheShowSectionFirstShowImg_XPATH = //div[@id='ShowBox']/descendant::div[1]/descendant::div[contains(@class,'ShowColumn')]/descendant::div[1]/descendant::a/descendant::figure/descendant::figcaption
+myShowsPageFollowedFirstVideoShowTitle_XPATH = //div[@id='featured_channels']/descendant::div[contains(@class,'video_list')]/descendant::div[@class='genre list0']/descendant::li[1]/descendant::div[@class='subtitle']/descendant::a[1]
+myShowsPageFollowedVideoImg_XPATH = //div[@id='featured_channels']/descendant::div[contains(@class,'video_list')]/descendant::div[contains(@class,'genre list')]/descendant::li
+myShowsPageFirstVideoTitleOfFirstFollowedShows_XPATH = //div[@class='video_container']/descendant::li[1]/descendant::p[@class='featured_metadata_title']
+myShowsPageShowTitlePartOne_XPATH = //div[@id='featured_channels']/descendant::div[contains(@class,'video_list')]/descendant::div[contains(@class,'genre list
+myShowsPageShowTitlePartTwo_XPATH = ')]/descendant::h1/descendant::a
+
+
+#*********************************************************************************************************************
+#													WATCH PAGE OBJECTS
+#*********************************************************************************************************************
+videoPlayer_ID = flashContent
+watchPageUpNextVidoSection_XPATH = //div[@class='playlists_container']/descendant::div[@class='playlists']
+watchPageUpNextVidoControler_XPATH = //div[@id='player_container_new']/descendant::section
+watchPageVideoPlayerController_XPATH = //div[@id='player_container_new']
+vidoControlerPlayIcon_XPATH = //div[@id='player_container_new']/descendant::div[@class='play']/descendant::img
+vidoControlerPauseIcon_XPATH = //div[@id='player_container_new']/descendant::div[@class='pause']/descendant::img
+vidoControlerVolumeIcon_XPATH = //div[@id='player_container_new']/descendant::div[@class='volume']/descendant::img[@class='mute_off']
+vidoControlerVolumeMuteIcon_XPATH = //div[@id='player_container_new']/descendant::div[@class='volume']/descendant::img[@class='mute_on']
+vidoControlerVideoElapsedTime_XPATH = //div[@id='player_container_new']/descendant::div[@class='display']/descendant::span
+vidoControlerVideoProgressBar_XPATH = //div[@id='player_container_new']/descendant::div[@class='scrubber']
+vidoControlerVideoTotalDuration_XPATH = //div[@id='player_container_new']/descendant::div[@class='duration']/descendant::span
+vidoControlerFullScreeIcon_XPATH = //div[@id='player_container_new']/descendant::div[@class='fullscreen']/descendant::img
+vidoControlerSmallScreeIcon_XPATH = //div[@id='player_container_new']/descendant::div[@class='smallscreen']/descendant::img
+watchPageShareButton_XPATH = //div[@id='video-wrapper']/descendant::div[@class='watch_spread_the_love']/descendant::div[@class='my-button']/descendant::span
+watchPageVideoShowTitle_XPATH = //div[@id='watch_video_metadata']/descendant::div[@class='watch_video_metadata']/descendant::div[contains(@class,'watch_titles')]/descendant::a
+watchPageVideoTitle_XPATH = //div[@id='watch_video_metadata']/descendant::div[@class='watch_video_metadata']/descendant::div[contains(@class,'watch_titles')]/descendant::span[2]
+watchPageVideoDescription_XPATH = //div[@id='watch_video_metadata']/descendant::div[@class='watch_video_metadata']/descendant::div[contains(@class,'video_description')]/descendant::div[@class='meta_description']/descendant::P
+watchPageVideoDescriptionExpandIcon_XPATH = //div[@id='watch_video_metadata']/descendant::div[@class='watch_video_metadata']/descendant::div[contains(@class,'video_description')]/descendant::div[@class='description_down']/descendant::a
+watchPageVideoDescriptionCollapseIcon_XPATH = //div[@id='watch_video_metadata']/descendant::div[@class='watch_video_metadata']/descendant::div[contains(@class,'video_description')]/descendant::div[@class='description_up']/descendant::a
+watchPageFollowButton_XPATH = //div[@id='watch_video_metadata']/descendant::div[@class='watch_video_metadata']/descendant::div[contains(@class,'watch_follow')]/descendant::span[@class='follow_button']/descendant::a[contains(@class,'thumbSubscribe')]
+watchPageGetToKnowTheShowSection_XPATH = //div[@id='featured_channels']/descendant::section[@class='featured-channels-section']/descendant::ul
+watchPageWhatWeAreWatchingSection_XPATH = //div[@id='featured_videos']/descendant::div[@class='featured_cluster']
+watchPageWatchTodaysPlaylistsButton_XPATH = //div[@id='featured']/descendant::div[@class='more_btn']/descendant::a
+watchPageUpNextVidoSectionShowPlaylistTitle_XPATH = //div[contains(@id,'mCSB')]/descendant::div[@class='playlists']/descendant::div[@class='metadata_container']/descendant::div[@class='title']
+watchPageUpNextVidoSectionShowPlaylistDescription_XPATH = //div[contains(@id,'mCSB')]/descendant::div[@class='playlists']/descendant::div[@class='metadata_container']/descendant::div[@class='description']
+watchPageUpNextVidoSectionShowPlaylistMoreInfoIcon_XPATH = //div[contains(@id,'mCSB')]/descendant::div[@class='playlists']/descendant::div[@class='metadata_container']/descendant::div[@class='moreinfo']/descendant::img
+watchPageUpNextVidoSectionVideoCount_XPATH = //div[contains(@id,'mCSB')]/descendant::div[@class='playlists']/descendant::div[@class='metadata_container']/descendant::div[@class='videos']
+watchPageUpNextVidoSectionVideoImg_XPATH = //div[contains(@id,'mCSB')]/descendant::div[@class='playlists']/descendant::li[@class='watch_list']/descendant::a[@class='logo video']/descendant::img
+watchPageUpNextVideoSectionScrollDown_XPATH = //div[contains(@id,'mCSB')]/descendant::div[@class='mCSB_draggerContainer']
+watchPageUpNextVideoSectionDrawerHandle_ID = drawer_handle
+watchPageVideoOverlay_XPATH = //div[@id='paused-metadata']
+watchPageVideoOverlayShowImg_XPATH = //div[@id='paused-metadata']/descendant::div[@class='metadata']/descendant::a[@class='logo']/descendant::img
+watchPageVideoOverlayVideoTitle_XPATH = //div[@id='paused-metadata']/descendant::div[@class='metadata']/descendant::div[@class='title']
+watchPageVideoOverlayVideoDescription_XPATH = //div[@id='paused-metadata']/descendant::div[@class='metadata']/descendant::div[@class='description']
+watchPageVideoOverlayVideoLastUpdated_XPATH = //div[@id='paused-metadata']/descendant::div[@class='metadata']/descendant::div[@class='updated_time']
+watchPageVideoOverlayFollowButton_XPATH = //div[@id='paused-metadata']/descendant::div[contains(@id,'social_sharing')]/descendant::span[@class='follow_button']/descendant::a[contains(@class,'thumbSubscribe')]
+watchPagePLaylistShowTitle_XPATH = //section[@id='userBarView']/descendant::div[contains(@class,'section_container')]/descendant::div[@class='home_icon']
+watchPageHeaderWatchableLogo_XPATH = //li[@id='logo']/descendant::a/descendant::img[contains(@class,'normal')]
+watchPageDownArrow_XPATH = //li[@id='buttons']/descendant::span[@class='user_profile_name']/descendant::img
+watchPageFirstShowLogo_XPATH = //div[@id='featured_channels']/descendant::li[1]/descendant::a[@class='logo']/descendant::img
+
+
+#*********************************************************************************************************************
+#													SOCIAL SHARING FUNCTIONALITY OBJECTS
+#*********************************************************************************************************************
+socialSharingPopup_XPATH = //div[@id='video-wrapper']/descendant::div[contains(@class,'watch_social_popup')]
+socialSharingPopupFacebookIcon_XPATH = //div[@id='video-wrapper']/descendant::span[@class='facebook_share']/descendant::img
+socialSharingPopupTwitterIcon_XPATH = //div[@id='video-wrapper']/descendant::span[@class='twitter_share']/descendant::img
+socialSharingPopupEmailIcon_XPATH = //div[@id='video-wrapper']/descendant::span[@class='email_share']/descendant::img
+watchPageFacebookIcon_XPATH = //div[@id='social_sharing_container']/descendant::span[@class='share_icon facebook_share']/descendant::a/descendant::img
+watchPageTwitterIcon_XPATH = //div[@id='social_sharing_container']/descendant::span[@class='share_icon twitter_share']/descendant::a/descendant::img
+watchPageEmailIcon_XPATH = //div[@id='social_sharing_container']/descendant::span[@class='share_icon email_share']/descendant::a/descendant::img
+watchPageEmailPlaylistPopUp_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::div[@class='register-user login']
+watchPageEmailPlaylistPopUpCloseButton_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::div[@class='close_icon ']/descendant::img
+watchPageEmailPlaylistPopUpTitle_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::div[@class='register-user login']/descendant::header[contains(@class,'emailpl_title')]
+watchPageEmailPlaylistPopUpFromEmail_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::div[@class='register-user login']/descendant::input[@id='from_email']
+watchPageEmailPlaylistPopUpToEmail_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::div[@class='register-user login']/descendant::input[@id='to_email']
+watchPageEmailPlaylistPopUpToEmailErrorMessage_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::div[@class='register-user login']/descendant::label[@class='error'][@for='to_email']
+watchPageEmailPlaylistPopUpMessage_ID = msg_pl
+watchPageEmailPlaylistPopUpSendButton_XPATH = //div[@id='email-video-tabs-pl']/descendant::div[@id='step-0']/descendant::fieldset[@class='first']/descendant::fieldset[contains(@class,'emailThis')]/descendant::button
+watchPageEmailPlaylistSendConfirmMessage_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video_pl ']/descendant::header[contains(@class,'confirmation')]
+watchPageEmailVideoPopUp_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::div[@class='register-user login']
+watchPageEmailVideoPopUpCloseButton_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::div[@class='close_icon ']/descendant::img
+watchPageEmailVideoPopUpTitle_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::div[@class='register-user login']/descendant::header[contains(@class,'emailvideo_title')]
+watchPageEmailVideoPopUpFromEmail_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::div[@class='register-user login']/descendant::input[@id='from_email']
+watchPageEmailVideoPopUpToEmail_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::div[@class='register-user login']/descendant::input[@id='to_email']
+watchPageEmailVideoPopUpToEmailErrorMessage_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::div[@class='register-user login']/descendant::label[@class='error'][@for='to_email']
+watchPageEmailVideoPopUpMessage_ID = msg
+watchPageEmailVideoPopUpSendButton_XPATH = //div[@id='email-video-tabs']/descendant::div[@id='step-0']/descendant::fieldset[@class='first']/descendant::fieldset[contains(@class,'emailThis')]/descendant::button
+watchPageEmailVideoSendConfirmMessage_XPATH = //div[@id='headerView']/descendant::div[@class='dialog_box_container email_video ']/descendant::header[contains(@class,'confirmation')]
+socialSharingPopUpEmailLabel_XPATH = //div[@id='video-wrapper']/descendant::span[@class='email_share']/descendant::div[@class='icon-center']/descendant::p
+socialSharingPopUpTwitterLabel_XPATH = //div[@id='video-wrapper']/descendant::span[@class='twitter_share']/descendant::div[@class='icon-center']/descendant::p
+socialSharingPopUpFaceBookLabel_XPATH = //div[@id='video-wrapper']/descendant::span[@class='facebook_share']/descendant::div[@class='icon-center']/descendant::p
+twitterLoginPopUp_XPATH = //div[@id='bd']
+twitterLoginPopUpPlaylistUrl_XPATH = //span[@class='field']/descendant::textarea
+watchPagePlaylistTitle_XPATH = //div[@class='playlists']/descendant::section/descendant::div[@class='title']
+facebookLoginPopUp_XPATH = //div[@id='booklet']
+
+#*********************************************************************************************************************
+#													SIGN UP FUNCTIONALITY OBJECTS
+#*********************************************************************************************************************
+signUpForm_XPATH = //div[@id='headerView']/descendant::div[contains(@class,'dialog_box_container sign_up')]/descendant::div[@class='register-user login']
+signUpFormHeading_XPATH = //header[contains(text(),'Sign')]
+signUpFormCloseButton_XPATH = //div[@id='signup_close_icon']/descendant::img
+signUpFormUserNameText_ID = username
+signUpFormUserEmailText_ID = useremail
+signUpFormPasswordText_ID = password
+signUpFormTermsConditionCheck_ID = terms_conditions_copy_box
+signUpFormTermsConditionText_XPATH = //form[@id='signup']/descendant::div[@class='top terms_conditions text']
+signUpFormTermsOfServiceLink_XPATH = //form[@id='signup']/descendant::div[@class='top terms_conditions text']/descendant::a[1]
+signUpFormPrivacyPolicyLink_XPATH = //form[@id='signup']/descendant::div[@class='top terms_conditions text']/descendant::a[2]
+signUpFormGetWatchingButton_XPATH = //form[@id='signup']/descendant::button[@id='user_login']
+signUpFormUserNameErrorMessage_XPATH = //form[@id='signup']/descendant::label[@class='error'][@for='username']
+signUpFormUserEmailErrorMessage_XPATH = //form[@id='signup']/descendant::label[@class='error'][@for='useremail']
+signUpFormPasswordErrorMessage_XPATH = //form[@id='signup']/descendant::label[@class='error'][@for='password']
+signUpFormTermsConditionErrorMessage_XPATH = //form[@id='signup']/descendant::label[@class='error'][@for='terms_conditions_copy']
+signUpFormRecaptchaErrorMessage_XPATH = //div[@id='recaptcha_holder_signup']/descendant::label[@class='error'][@for='g-recaptcha-response']
+recaptchaHolder_XPATH = //div[@id='recaptcha_holder_signup']/descendant::div[1]
+recaptchaCheckbox_XPATH = //span[@id='recaptcha-anchor']/descendant::div[@class='recaptcha-checkbox-checkmark']
+recaptchaAnchorLabel_XPATH = recaptcha-anchor-label
+recaptchaLogoImg_XPATH = //div[@class='rc-anchor-normal-footer']/descendant::div[contains(@class,'anchor-logo-img')]
+recaptchaLogoText_XPATH = //div[@class='rc-anchor-normal-footer']/descendant::div[contains(@class,'anchor-logo-text')]
+recaptchaPolicyLink_XPATH = //div[@class='rc-anchor-normal-footer']/descendant::div[@class='rc-anchor-pt']/descendant::a[1]
+recaptchaTermsLink_XPATH = //div[@class='rc-anchor-normal-footer']/descendant::div[@class='rc-anchor-pt']/descendant::a[2]
+
+
+
