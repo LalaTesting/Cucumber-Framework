@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;syndy_smoke_tests.xml&apos; to &apos;suites&apos;&#x0D;&#x0A;- Original project: &apos;syndy&apos;&#x0D;&#x0A;- Destination element: &apos;suites&apos;&#x0D;&#x0A;- Original element: &apos;syndy_smoke_tests.xml&apos;" description="Copy file" element1="src/main/resources/suites/syndy_smoke_tests.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1510224438628" target="/syndy/src/main/resources/suites" units="0" version="1.0"/>
+</session>

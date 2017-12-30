@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506431102778_0" label="watchable-automation" name="watchable-automation">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/watchable-automation" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/syndy" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tollbooth" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fabric" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tollgate" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/framework" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/webclient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mobileweb" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506431286248_1" label="Window Working Set" name="Aggregate for window 1506431286247"/>
+</workingSetManager>
