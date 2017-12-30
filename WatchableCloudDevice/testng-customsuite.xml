@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Parallel Run" parallel="tests" thread-count="10">
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ </listeners>
+     
+
+   
+<test verbose="2" name="Moto_Galaxy_2nd" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_G_2nd_gen_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_G_2nd_gen_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+<!--  
+<test verbose="2" name="LG_Nexus_5X" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_Nexus_5X_real"/>
+    <parameter name="APPLICATION" value="LG_Nexus_5X_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Motorola_Nexus_6" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Nexus_6_real"/>
+    <parameter name="APPLICATION" value="Motorola_Nexus_6_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Samsung_Galaxy_S6" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_S6_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_S6_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  <test verbose="2" name="HTC_One_Max" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_One_Max_real"/>
+    <parameter name="APPLICATION" value="HTC_One_Max_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+<test verbose="2" name="Samsung_Galaxy_S5_mini" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_S5_mini_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_S5_mini_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+<test verbose="2" name="Samsung_Galaxy_S6_Edge_Plus" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_S6_Edge_Plus_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_S6_Edge_Plus_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+<test verbose="2" name="Sony_Xperia_Z" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+<test verbose="2" name="Sony_Xperia_Z1_Compact" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z1_Compact_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z1_Compact_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+<test verbose="2" name="Sony_Xperia_Z2" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z2_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z2_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+ 
+<test verbose="2" name="Sony_Xperia_Z3" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z3_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z3_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+
+<test verbose="2" name="Motorola_Moto_G_3rd_gen" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_G_3rd_gen_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_G_3rd_gen_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+
+
+<test verbose="2" name="HTC_One_M9_" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_One_M9_real"/>
+    <parameter name="APPLICATION" value="HTC_One_M9_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+   
+<test verbose="2" name="Motorola_Moto_X" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_X_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_X_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Motorola_Moto_X_2nd_gen" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_X_2nd_gen_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_X_2nd_gen_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+  
+<test verbose="2" name="Sony_Xperia_Z5" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z5_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z5_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+ 
+
+<test verbose="2" name="Sony_Xperia_Z3_Compact" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z3_Compact_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z3_Compact_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+    
+
+<test verbose="2" name="Sony_Xperia_Z_Ultra" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z_Ultra_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z_Ultra_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test> 
+    
+ 
+<test verbose="2" name="Samsung_Galaxy_Note_Edge" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_Note_Edge_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_Note_Edge_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+ 
+
+<test verbose="2" name="Samsung_Galaxy_Note_3_5" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_Note_3_5_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_Note_3_5_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+<test verbose="2" name="Samsung_Galaxy_J5" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_J5_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_J5_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Samsung_Galaxy_Grand_Prime" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_Grand_Prime_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_Grand_Prime_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+ <test verbose="2" name="LG_Nexus_5_6" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_Nexus_5_6_real"/>
+    <parameter name="APPLICATION" value="LG_Nexus_5_6_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+<test verbose="2" name="LG_Nexus_5" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_Nexus_5_real"/>
+    <parameter name="APPLICATION" value="LG_Nexus_5_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  <test verbose="2" name="LG_G4" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_G4_real"/>
+    <parameter name="APPLICATION" value="LG_G4_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+<test verbose="2" name="LG_Nexus_4_E960" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_Nexus_4_E960_real"/>
+    <parameter name="APPLICATION" value="LG_Nexus_4_E960_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+  <test verbose="2" name="LG_G2" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_G2_real"/>
+    <parameter name="APPLICATION" value="LG_G2_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+    
+<test verbose="2" name="Motorola_DROID_RAZR_MAXX" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_DROID_RAZR_MAXX_HD_real"/>
+    <parameter name="APPLICATION" value="Motorola_DROID_RAZR_MAXX_HD_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Samsung_Galaxy_A7" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_A7_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_A7_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="LG_G_Flex" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_G_Flex_real"/>
+    <parameter name="APPLICATION" value="LG_G_Flex_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Motorola_DROID_RAZR_M" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_DROID_RAZR_M_real"/>
+    <parameter name="APPLICATION" value="Motorola_DROID_RAZR_M_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+             
+                         
+<test verbose="2" name="HTC_Desire_610" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_Desire_610_real"/>
+    <parameter name="APPLICATION" value="HTC_Desire_610_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+        
+
+<test verbose="2" name="HTC_Desire_510" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_Desire_510_real"/>
+    <parameter name="APPLICATION" value="HTC_Desire_510_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+  
+
+<test verbose="2" name="Samsung_Galaxy_Note_4" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_Note_4_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_Note_4_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+ 
+
+
+<test verbose="2" name="Motorola_Moto_E_2nd_gen" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_E_2nd_gen_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_E_2nd_gen_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+</test>
+
+<test verbose="2" name="HTC_One_mini" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_One_mini_real"/>
+    <parameter name="APPLICATION" value="HTC_One_mini_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+
+<test verbose="2" name="HTC_One_M8" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_One_M8_real"/>
+    <parameter name="APPLICATION" value="HTC_One_M8_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+
+<test verbose="2" name="HTC_One" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="HTC_One_real"/>
+    <parameter name="APPLICATION" value="HTC_One_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+  
+<test verbose="2" name="LG_G3" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_G3_real"/>
+    <parameter name="APPLICATION" value="LG_G3_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+  
+<test verbose="2" name="LG_Nexus_4_4_E960" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="LG_Nexus_4_4_E960_real"/>
+    <parameter name="APPLICATION" value="LG_Nexus_4_4_E960_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+  
+
+
+  
+  <test verbose="2" name="Motorola_Moto_G" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_G_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_G_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+  
+<test verbose="2" name="Motorola_Moto_G_2nd_gen" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Motorola_Moto_G_2nd_gen_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_G_2nd_gen_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+
+<test verbose="2" name="OnePlus_One" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="OnePlus_One_real"/>
+    <parameter name="APPLICATION" value="OnePlus_One_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+  
+  <test verbose="2" name="Samsung_Galaxy_Note_3" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_Note_3_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_Note_3_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+
+ <test verbose="2" name="Samsung_Galaxy_S5" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Samsung_Galaxy_S5_real"/>
+    <parameter name="APPLICATION" value="Samsung_Galaxy_S5_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+  
+  <test verbose="2" name="Sony_Xperia_Z1" parallel="methods" thread-count="10">
+    <parameter name="DEVICENAME" value="Sony_Xperia_Z1_real"/>
+    <parameter name="APPLICATION" value="Sony_Xperia_Z1_real"/>      
+    <classes>        
+        <class name="Tests.GenricNavigationTests"/>       
+   </classes>
+  </test>
+ -->
+  </suite> <!-- Default suite -->

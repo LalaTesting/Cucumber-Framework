@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Tests.LoginTests">
+        <methods>
+          <include name="test_TC_VerifyForgotPasswordScreenWithInvalidUsernameEmail"/>
+          <include name="test_TC_VerifyForgotPasswordScreenWithValidUsernameEmail"/>
+          <include name="test_TC_VerifyLoginScreen"/>
+          <include name="test_TC_VerifyForgotPasswordScreenClearErrorMsg"/>
+          <include name="test_TC_VerifyTapBackWhenErrorOccured"/>
+          <include name="test_TC_VerifyLoginWithInvalidCredentials"/>
+          <include name="test_TC_VerifyLoginWithBlankCredentials"/>
+          <include name="test_TC_VerifyForgotPasswordNavigateToLogin"/>
+          <include name="test_TC_VerifyLoginWithValidEmailPassword"/>
+          <include name="test_TC_VerifyLoginWithValidUsernamePassword"/>
+          <include name="test_TC_VerifyForgotPasswordScreenDetails"/>
+          <include name="test_TC_VerifyNavigateToHomeScreen"/>
+        </methods>
+      </class> <!-- Tests.LoginTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

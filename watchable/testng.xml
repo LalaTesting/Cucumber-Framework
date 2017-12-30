@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Parallel Run"  thread-count="10">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test verbose="2" name="WelcomePage" thread-count="1">
+	
+		<classes>
+			
+			<class name="Tests.WelcomeTests" />
+			
+		</classes>
+	</test>
+	
+		<test verbose="2" name="LoginPage" thread-count="1">
+	
+		<classes>
+			
+			<class name="Tests.LoginTests" />
+			
+		</classes>
+	</test>
+	
+	<test verbose="2" name="SignUpPage" thread-count="1">
+	
+		<classes>
+			
+<class name="Tests.SignUpTests" />
+			
+		</classes>
+	</test>	
+	
+			<test verbose="2" name="SliderPage" thread-count="1">
+	
+		<classes>
+			
+			<class name="Tests.SliderTests" />
+			
+		</classes>
+	</test>
+	
+				<test verbose="2" name="PlaylistPage" thread-count="1">
+	
+		<classes>
+			
+		<class name="Tests.PlaylistTests" />
+			
+		</classes>
+	</test>
+	
+					<test verbose="2" name="PlaylistDetailPage" thread-count="1">
+	
+		<classes>
+			
+		<class name="Tests.PlaylistDetailsTests" />
+			
+		</classes>
+	</test>
+	
+						<test verbose="2" name="ShowDetailPage" thread-count="1">
+	
+		<classes>
+			
+	<class name="Tests.ShowDetailsTests" />
+			
+		</classes>
+	</test>
+	
+						
+					<test verbose="2" name="ProviderPage" thread-count="1">
+	
+		<classes>
+			
+	<class name="Tests.ProviderTests" />
+			
+		</classes>
+	</test>		
+				
+					
+					<test verbose="2" name="GenrePage" thread-count="1">
+	
+		<classes>
+			
+		    
+	<class name="Tests.GenreTests" />
+			
+		</classes>
+	</test>		
+	
+		<test verbose="2" name="GenreDetailPage" thread-count="1">
+	
+		<classes>
+			
+	<class name="Tests.GenreDetailsTests" />
+			
+		</classes>
+	</test>		
+	
+		<test verbose="2" name="SearchPage" thread-count="1">
+	
+		<classes>
+			
+	<class name="Tests.SearchTests" />
+			
+		</classes>
+	</test>		
+	
+					
+		<test verbose="2" name="MyShowsPage" thread-count="1">
+	
+		<classes>
+			
+	<class name="Tests.MyShowsTests" />
+			
+		</classes>
+	</test>		
+	
+		<test verbose="2" name="HistoryPage" thread-count="1">
+	
+		<classes>
+			
+<class name="Tests.HistoryTests" />
+			
+		</classes>
+	</test>	
+	
+	
+	<test verbose="2" name="SettingPage" thread-count="1">
+	
+		<classes>
+			
+<class name="Tests.SettingTests" />
+			
+		</classes>
+	</test>	
+	
+		<test verbose="2" name="GuestUserPage" thread-count="1">
+	
+		<classes>
+			
+<class name="Tests.GuestUserTests" />
+			
+		</classes>
+	</test>	
+	
+		
+			<test verbose="2" name="GenricNavigationPage" thread-count="1">
+	
+		<classes>
+			
+<class name="Tests.GenricNavigationTests" />
+			
+		</classes>
+	</test>			
+		
+					
+</suite> <!-- Default suite -->
+<!-- parallel="tests" -->

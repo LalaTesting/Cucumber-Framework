@@ -1,0 +1,518 @@
+<html>
+<head>
+<title>TestNG:  SignUpPage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SignUpPage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 03 16:39:12 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1139 seconds (1139182 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyBackButtonFunctionality()'><b>test_TC_VerifyBackButtonFunctionality</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-341138954" onClick='toggleBox("Output-341138954", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341138954" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341138954">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Back Icon Exists<br/>
+Back Icon Exists<br/>
+Login Button Exists<br/>
+test_TC_VerifyBackButtonFunctionality Passed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyCompleteRegistrationOnTapOfDoneButton()'><b>test_TC_VerifyCompleteRegistrationOnTapOfDoneButton</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-27362884" onClick='toggleBox("Output-27362884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27362884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27362884">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailAlreadyExists()'><b>test_TC_VerifyEmailAlreadyExists</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-943454742" onClick='toggleBox("Output-943454742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-943454742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-943454742">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailAlreadyExists Passed<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailTextField()'><b>test_TC_VerifyEmailTextField</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-1473771722" onClick='toggleBox("Output-1473771722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1473771722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1473771722">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailTextField Passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailWithInvalidData()'><b>test_TC_VerifyEmailWithInvalidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Testdata!gmail.com<br/>
+<a href="#Output-2014461570" onClick='toggleBox("Output-2014461570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2014461570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2014461570">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailWithInvalidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailWithInvalidData()'><b>test_TC_VerifyEmailWithInvalidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Testdata@gmail$com<br/>
+<a href="#Output-1714113641" onClick='toggleBox("Output-1714113641", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714113641" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714113641">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailWithInvalidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailWithInvalidData()'><b>test_TC_VerifyEmailWithInvalidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Testdatagmail<br/>
+<a href="#Output-710190911" onClick='toggleBox("Output-710190911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-710190911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-710190911">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailWithInvalidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailWithValidData()'><b>test_TC_VerifyEmailWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: abc123@gmail.com<br/>
+<a href="#Output-1348453796" onClick='toggleBox("Output-1348453796", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1348453796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1348453796">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailWithValidData()'><b>test_TC_VerifyEmailWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: valtech121@gmail.com<br/>
+<a href="#Output-198499365" onClick='toggleBox("Output-198499365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-198499365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-198499365">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyEmailWithValidData()'><b>test_TC_VerifyEmailWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: valtech@gmail.com<br/>
+<a href="#Output-1006227006" onClick='toggleBox("Output-1006227006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1006227006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1006227006">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Email Text Field Exists<br/>
+test_TC_VerifyEmailWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyFooterMessage()'><b>test_TC_VerifyFooterMessage</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-586127428" onClick='toggleBox("Output-586127428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-586127428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-586127428">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Footer Text Exists<br/>
+test_TC_VerifyFooterMessage Passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordLessThanSixCharacters()'><b>test_TC_VerifyPasswordLessThanSixCharacters</b><br>Test class: Tests.SignUpTests<br>Parameters: Demo<br/>
+<a href="#Output-1292838001" onClick='toggleBox("Output-1292838001", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292838001" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292838001">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordLessThanSixCharacters Passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordLessThanSixCharacters()'><b>test_TC_VerifyPasswordLessThanSixCharacters</b><br>Test class: Tests.SignUpTests<br>Parameters: Demo <br/>
+<a href="#Output-1944201789" onClick='toggleBox("Output-1944201789", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944201789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944201789">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordLessThanSixCharacters Passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordLessThanSixCharacters()'><b>test_TC_VerifyPasswordLessThanSixCharacters</b><br>Test class: Tests.SignUpTests<br>Parameters: Dem<br/>
+<a href="#Output-259219561" onClick='toggleBox("Output-259219561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-259219561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-259219561">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordLessThanSixCharacters Passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordTextField()'><b>test_TC_VerifyPasswordTextField</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-1432536094" onClick='toggleBox("Output-1432536094", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1432536094" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1432536094">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordTextField Passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordWithValidData()'><b>test_TC_VerifyPasswordWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Demo1111<br/>
+<a href="#Output-1110031167" onClick='toggleBox("Output-1110031167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1110031167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1110031167">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordWithValidData()'><b>test_TC_VerifyPasswordWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: test2111<br/>
+<a href="#Output-550302731" onClick='toggleBox("Output-550302731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550302731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550302731">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPasswordWithValidData()'><b>test_TC_VerifyPasswordWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: test#345<br/>
+<a href="#Output-900636745" onClick='toggleBox("Output-900636745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-900636745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-900636745">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Password Text Field Exists<br/>
+test_TC_VerifyPasswordWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyPrivacyPolicyLink()'><b>test_TC_VerifyPrivacyPolicyLink</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-997055773" onClick='toggleBox("Output-997055773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-997055773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-997055773">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Footer Text Exists<br/>
+test_TC_VerifyPrivacyPolicyLink Passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifySignUpScreen()'><b>test_TC_VerifySignUpScreen</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-542365801" onClick='toggleBox("Output-542365801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-542365801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-542365801">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Back Icon Exists<br/>
+Email Text Field Exists<br/>
+Password Text Field Exists<br/>
+Password Text Field Exists<br/>
+Footer Text Exists<br/>
+test_TC_VerifySignUpScreen Passed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyTapBackWhenErrorOccured()'><b>test_TC_VerifyTapBackWhenErrorOccured</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-1223850219" onClick='toggleBox("Output-1223850219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1223850219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1223850219">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Back Icon Exists<br/>
+Login Button Exists<br/>
+test_TC_VerifyTapBackWhenErrorOccured Passed<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyTermsOfServiceLink()'><b>test_TC_VerifyTermsOfServiceLink</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-1628998132" onClick='toggleBox("Output-1628998132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1628998132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1628998132">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Footer Text Exists<br/>
+test_TC_VerifyTermsOfServiceLink Passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameTextField()'><b>test_TC_VerifyUsernameTextField</b><br>Test class: Tests.SignUpTests<br/>
+<a href="#Output-1973233403" onClick='toggleBox("Output-1973233403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1973233403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1973233403">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+test_TC_VerifyUsernameTextField Passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameWithInvalidData()'><b>test_TC_VerifyUsernameWithInvalidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Test data<br/>
+<a href="#Output-1029472813" onClick='toggleBox("Output-1029472813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1029472813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1029472813">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Username Text Field Exists<br/>
+test_TC_VerifyUsernameWithInvalidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameWithInvalidData()'><b>test_TC_VerifyUsernameWithInvalidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Testdata@#$$<br/>
+<a href="#Output-1237825806" onClick='toggleBox("Output-1237825806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237825806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237825806">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Username Text Field Exists<br/>
+test_TC_VerifyUsernameWithInvalidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameWithInvalidData()'><b>test_TC_VerifyUsernameWithInvalidData</b><br>Test class: Tests.SignUpTests<br>Parameters: Testdata123@#$$<br/>
+<a href="#Output-1048855692" onClick='toggleBox("Output-1048855692", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1048855692" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1048855692">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Username Text Field Exists<br/>
+test_TC_VerifyUsernameWithInvalidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameWithValidData()'><b>test_TC_VerifyUsernameWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: testuser<br/>
+<a href="#Output-1409545055" onClick='toggleBox("Output-1409545055", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1409545055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1409545055">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Username Text Field Exists<br/>
+test_TC_VerifyUsernameWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameWithValidData()'><b>test_TC_VerifyUsernameWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: test-user<br/>
+<a href="#Output-1671507048" onClick='toggleBox("Output-1671507048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1671507048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1671507048">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Username Text Field Exists<br/>
+test_TC_VerifyUsernameWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+<tr>
+<td title='Tests.SignUpTests.test_TC_VerifyUsernameWithValidData()'><b>test_TC_VerifyUsernameWithValidData</b><br>Test class: Tests.SignUpTests<br>Parameters: test_user<br/>
+<a href="#Output-850551034" onClick='toggleBox("Output-850551034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-850551034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-850551034">
+Sign Up Button Exists and is Tappable<br/>
+Sign Up Label Exists<br/>
+Username Text Field Exists<br/>
+test_TC_VerifyUsernameWithValidData Passed<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Tests.SignUpTests@544fe44c</td></tr>
+</table><p>
+</body>
+</html>

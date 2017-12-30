@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Test Parallel Run]" parallel="tests">
+  <parameter name="DEVICENAME" value="Motorola_Moto_G_2nd_gen_real"/>
+  <parameter name="APPLICATION" value="Motorola_Moto_G_2nd_gen_real"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Moto_Galaxy_2nd(failed)" parallel="methods">
+    <parameter name="DEVICENAME" value="Motorola_Moto_G_2nd_gen_real"/>
+    <parameter name="APPLICATION" value="Motorola_Moto_G_2nd_gen_real"/>
+    <classes>
+      <class name="Tests.GenricNavigationTests">
+        <methods>
+          <include name="test_TC_GenricNavigationGuestUserToLogout"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.GenricNavigationTests -->
+    </classes>
+  </test> <!-- Moto_Galaxy_2nd(failed) -->
+</suite> <!-- Failed suite [Test Parallel Run] -->

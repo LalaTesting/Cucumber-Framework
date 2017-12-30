@@ -1,0 +1,388 @@
+<html>
+<head>
+<title>TestNG:  PlaylistDetailPage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PlaylistDetailPage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 03 17:17:04 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1141 seconds (1141624 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenSubscribeShow()'><b>test_TC_VerifyPlaylistScreenSubscribeShow</b><br>Test class: Tests.PlaylistDetailsTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 65.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;vdc01dlap0301&apos;, ip: &apos;192.168.20.43&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\android_file\app-debug.apk, appPackage=com.comcast.watchablephone, networkConnectionEnabled=true, warnings={}, appWaitActivity=.activity.Splash, databaseEnabled=false, deviceName=03157df34047d60d, platform=LINUX, appActivity=.activity.Splash, desired={app=D:\android_file\app-debug.apk, appPackage=com.comcast.watchablephone, appActivity=.activity.Splash, platformVersion=5.0, appWaitActivity=.activity.Splash, platformName=Android, deviceName=03157df34047d60d}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5c8b9c07-0248-4f54-9ab6-a594c3db5665
+*** Element info: {Using=id, value=com.comcast.watchablephone:id/TextView_showTitle}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at Pages.PlaylistPage.playlistNameClick(PlaylistPage.java:104)
+	at Tests.PlaylistDetailsTests.loginNavigatePlaylistDetails(PlaylistDetailsTests.java:31)
+	at Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenSubscribeShow(PlaylistDetailsTests.java:206)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div><a href='#' onClick='toggleBox("stack-trace42544488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace42544488'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 65.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;vdc01dlap0301&apos;, ip: &apos;192.168.20.43&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\android_file\app-debug.apk, appPackage=com.comcast.watchablephone, networkConnectionEnabled=true, warnings={}, appWaitActivity=.activity.Splash, databaseEnabled=false, deviceName=03157df34047d60d, platform=LINUX, appActivity=.activity.Splash, desired={app=D:\android_file\app-debug.apk, appPackage=com.comcast.watchablephone, appActivity=.activity.Splash, platformVersion=5.0, appWaitActivity=.activity.Splash, platformName=Android, deviceName=03157df34047d60d}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 5c8b9c07-0248-4f54-9ab6-a594c3db5665
+*** Element info: {Using=id, value=com.comcast.watchablephone:id/TextView_showTitle}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at Pages.PlaylistPage.playlistNameClick(PlaylistPage.java:104)
+	at Tests.PlaylistDetailsTests.loginNavigatePlaylistDetails(PlaylistDetailsTests.java:31)
+	at Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenSubscribeShow(PlaylistDetailsTests.java:206)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></div></td>
+<td>98</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyDurationForEachVideoDisplayed()'><b>test_TC_VerifyDurationForEachVideoDisplayed</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-355518265" onClick='toggleBox("Output-355518265", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-355518265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-355518265">
+test_TC_VerifyDurationForEachVideoDisplayed passed<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyNavigationToInlinePlayerOnTappingVideoDescription()'><b>test_TC_VerifyNavigationToInlinePlayerOnTappingVideoDescription</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-1990519794" onClick='toggleBox("Output-1990519794", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1990519794" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990519794">
+test_TC_VerifyNavigationToInlinePlayerOnTappingVideoDescription passed<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyNavigationToShowDetail()'><b>test_TC_VerifyNavigationToShowDetail</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-707157673" onClick='toggleBox("Output-707157673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-707157673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-707157673">
+test_TC_VerifyNavigationToShowDetail passed<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistNavigatePlaylistDetailScreen()'><b>test_TC_VerifyPlaylistNavigatePlaylistDetailScreen</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-171493374" onClick='toggleBox("Output-171493374", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-171493374" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-171493374">
+Playlist Thumbnail Exists<br/>
+test_TC_VerifyPlaylistNavigatePlaylistDetailScreen passed<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenAutoPlayVideos()'><b>test_TC_VerifyPlaylistScreenAutoPlayVideos</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-914507705" onClick='toggleBox("Output-914507705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-914507705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-914507705">
+test_TC_VerifyPlaylistScreenAutoPlayVideos passed<br/>
+</div>
+</td>
+<td></td>
+<td>75</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenBack()'><b>test_TC_VerifyPlaylistScreenBack</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-712974096" onClick='toggleBox("Output-712974096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-712974096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-712974096">
+test_TC_VerifyPlaylistScreenBack passed<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenFocusOutOnTapStatusBar()'><b>test_TC_VerifyPlaylistScreenFocusOutOnTapStatusBar</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-477533894" onClick='toggleBox("Output-477533894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-477533894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-477533894">
+test_TC_VerifyPlaylistScreenFocusOutOnTapStatusBar passed<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenNameLogoAndFollow()'><b>test_TC_VerifyPlaylistScreenNameLogoAndFollow</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-1646371921" onClick='toggleBox("Output-1646371921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1646371921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1646371921">
+test_TC_VerifyPlaylistScreenNameLogoAndFollow passed<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenPlayVideoInline()'><b>test_TC_VerifyPlaylistScreenPlayVideoInline</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-953082513" onClick='toggleBox("Output-953082513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-953082513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-953082513">
+test_TC_VerifyPlaylistScreenPlayVideoInline passed<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenScrollDownAllVideos()'><b>test_TC_VerifyPlaylistScreenScrollDownAllVideos</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-1450652220" onClick='toggleBox("Output-1450652220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1450652220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1450652220">
+test_TC_VerifyPlaylistScreenScrollDownAllVideos passed<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenScrollDownToDefaultMode()'><b>test_TC_VerifyPlaylistScreenScrollDownToDefaultMode</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-1101048445" onClick='toggleBox("Output-1101048445", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1101048445" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101048445">
+test_TC_VerifyPlaylistScreenScrollDownToDefaultMode passed<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenScrollUpAllVideos()'><b>test_TC_VerifyPlaylistScreenScrollUpAllVideos</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-580673921" onClick='toggleBox("Output-580673921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-580673921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-580673921">
+test_TC_VerifyPlaylistScreenScrollUpAllVideos passed<br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenScrollUpToDefaultMode()'><b>test_TC_VerifyPlaylistScreenScrollUpToDefaultMode</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-20853837" onClick='toggleBox("Output-20853837", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20853837" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20853837">
+test_TC_VerifyPlaylistScreenScrollUpToDefaultMode passed<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenShare()'><b>test_TC_VerifyPlaylistScreenShare</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-1965445467" onClick='toggleBox("Output-1965445467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1965445467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1965445467">
+test_TC_VerifyPlaylistScreenShare passed<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenUnsubscribeShow()'><b>test_TC_VerifyPlaylistScreenUnsubscribeShow</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-1042786867" onClick='toggleBox("Output-1042786867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1042786867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1042786867">
+test_TC_VerifyPlaylistScreenUnsubscribeShow passed<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+<tr>
+<td title='Tests.PlaylistDetailsTests.test_TC_VerifyPlaylistScreenVideoThumbnailAndDescription()'><b>test_TC_VerifyPlaylistScreenVideoThumbnailAndDescription</b><br>Test class: Tests.PlaylistDetailsTests<br/>
+<a href="#Output-627318073" onClick='toggleBox("Output-627318073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-627318073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-627318073">
+test_TC_VerifyPlaylistScreenVideoThumbnailAndDescription passed<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>Tests.PlaylistDetailsTests@5f9d02cb</td></tr>
+</table><p>
+</body>
+</html>
