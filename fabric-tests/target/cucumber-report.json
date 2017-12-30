@@ -1,0 +1,3938 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "First- seasonsunderasset",
+        "description": "",
+        "id": "get-seasionsforallvideos----http://fabricdemo.xidio.com/fmds/api/:tenantid/:platform/seasons/:seasonid/videos;first--seasonsunderasset",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "method: GET http://fabricdemo.xidio.com/fmds/api/watchable/web/seasons/13253/videos",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "response is 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "ChannelsByGenreForPublisher.response_is_OK(int)"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:seasonId/videos",
+    "description": "",
+    "id": "get-seasionsforallvideos----http://fabricdemo.xidio.com/fmds/api/:tenantid/:platform/seasons/:seasonid/videos",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/SVOD_Introduce _Seasons_Episodes/SeasonsEpisodes.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GetChannelsId API",
+        "description": "",
+        "id": "get-channelbyidapi---fmds/api/{$tenant-id}/{$app-id}/channels/\u003cchannelid\u003e;getchannelsid-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3758113236,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.channels.ChannelByIdAPI.method_GET_fmds_api_watchable_web_channels_channelId_and_Verify_response_as_OK(ChannelByIdAPI.java:46)\r\n\tat ✽.Given method: GET /fmds/api/watchable/web/channels/\u003cchannelId\u003e and Verify response as 200 OK(com/comcast/watchable/channels/ChannelsById.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "method: GET /fmds/api/watchable/web/channels/\u003cchannelId\u003e and Verify response as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 80
+                }
+              ],
+              "location": "ChannelByIdAPI.method_GET_fmds_api_watchable_web_channels_channelId_and_Verify_response_as_OK(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "validate the channelsId API has type",
+            "match": {
+              "location": "ChannelByIdAPI.validate_the_channelsId_API_has_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "verify for channelId",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_channelId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "verify for channel title",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_channel_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "verify for the description",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_the_description()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify for the numOfShows parameter",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_the_numOfShows_parameter()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify for numOfVideos attribute is present and has equal to or more than one item",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_numOfVideos_attribute_is_present_and_has_equal_to_or_more_than_one_item()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify the attribute lastUpdateTimestamp",
+            "match": {
+              "location": "ChannelByIdAPI.verify_the_attribute_lastUpdateTimestamp()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "verify for the parentalGuidance attribute",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_the_parentalGuidance_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "verify for Links presence",
+            "match": {
+              "location": "ChannelByIdAPI.verify_for_Links_presence()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "validate Links has logo-image",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_logo_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "validate Links has paginateShowsAll attribute",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_paginateShowsAll_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "validate Links has template-image",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_template_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "validate Links has sharelink",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_sharelink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "validate Links has channels-videos atribute",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_channels_videos_atribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "validate Links has subscription-status",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_subscription_status()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "validate Links has paginateShowsTemplate",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_paginateShowsTemplate()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "validate Links has channels-allvideos",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_channels_allvideos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "validate Links has genre",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_genre()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "validate Links has publisher",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_publisher()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "validate Links has default-image",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_default_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "validate Links has pagnateShowsAndVideos",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_pagnateShowsAndVideos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "validate Links has cell-image",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_cell_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "validate Links has paginateShowsAndVideosTemplate",
+            "match": {
+              "location": "ChannelByIdAPI.validate_Links_has_paginateShowsAndVideosTemplate()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Two- Invalid channelId like 10",
+        "description": "",
+        "id": "get-channelbyidapi---fmds/api/{$tenant-id}/{$app-id}/channels/\u003cchannelid\u003e;two--invalid-channelid-like-10",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116470,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "methog GET channels/10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 20
+                }
+              ],
+              "location": "ChannelByIdAPI.methog_GET_channels(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 609312979,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "verify the status code",
+            "match": {
+              "location": "ChannelByIdAPI.verify_the_status_code()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Three - NonNumeric ChannelId like ABCDE@",
+        "description": "",
+        "id": "get-channelbyidapi---fmds/api/{$tenant-id}/{$app-id}/channels/\u003cchannelid\u003e;three---nonnumeric-channelid-like-abcde@",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35253,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "method: GET channels/ABCDE@ API",
+            "match": {
+              "location": "ChannelByIdAPI.method_GET_channels_ABCDE_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 575885890,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "validate the status code for alphanumeric channel id",
+            "match": {
+              "location": "ChannelByIdAPI.validate_the_status_code_for_alphanumeric_channel_id()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/\u003cchannelId\u003e",
+    "description": "",
+    "id": "get-channelbyidapi---fmds/api/{$tenant-id}/{$app-id}/channels/\u003cchannelid\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/channels/ChannelsById.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "One- GET Channels based on Pagination parameter",
+        "description": "",
+        "id": "get-channelswithpagination---fmds/api/{$tenant-id}/{$app-id}/channels?pagenum\u003d1\u0026pagesize\u003d2;one--get-channels-based-on-pagination-parameter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 573627461,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET ChannelsWithPagination api",
+            "match": {
+              "location": "ChannelsWithPagination.method_GET_ChannelsWithPagination_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10796377,
+              "error_message": "org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field \"pageNum\" (Class com.comcast.model.channel.videos.ChannelVideos), not marked as ignorable\n at [Source: org.apache.http.client.entity.LazyDecompressingInputStream@4b3c354a; line: 1, column: 13] (through reference chain: com.comcast.model.channel.videos.ChannelVideos[\"pageNum\"])\r\n\tat org.codehaus.jackson.map.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:53)\r\n\tat org.codehaus.jackson.map.deser.StdDeserializationContext.unknownFieldException(StdDeserializationContext.java:267)\r\n\tat org.codehaus.jackson.map.deser.std.StdDeserializer.reportUnknownProperty(StdDeserializer.java:673)\r\n\tat org.codehaus.jackson.map.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:659)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer.handleUnknownProperty(BeanDeserializer.java:1365)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer._handleUnknown(BeanDeserializer.java:725)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:703)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer.deserialize(BeanDeserializer.java:580)\r\n\tat org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2732)\r\n\tat org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1909)\r\n\tat com.comcast.watchable.channels.ChannelsWithPagination.verify_totalItems_attribute(ChannelsWithPagination.java:77)\r\n\tat ✽.Then verify totalItems attribute(com/comcast/watchable/channels/ChannelsWithPagination.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "verify totalItems attribute",
+            "match": {
+              "location": "ChannelsWithPagination.verify_totalItems_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "verify items attribute",
+            "match": {
+              "location": "ChannelsWithPagination.verify_items_attribute()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum\u003d1\u0026pageSize\u003d2",
+    "description": "",
+    "id": "get-channelswithpagination---fmds/api/{$tenant-id}/{$app-id}/channels?pagenum\u003d1\u0026pagesize\u003d2",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/channels/ChannelsWithPagination.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "channel\u0027s videos validation",
+        "description": "",
+        "id": "[/channels/{channelid}/videos]-as-a-user,-view-the-videos-under-channel;channel\u0027s-videos-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 125840,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET",
+            "match": {
+              "location": "VideosUnderChannel.method_GET()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29452,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "path: /api/web/channels/\u003cchannelId\u003e/videos",
+            "match": {
+              "location": "VideosUnderChannel.path_api_web_channels_channelId_videos()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 517194,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.channels.VideosUnderChannel.request_headers_and_SessionToken(VideosUnderChannel.java:56)\r\n\tat ✽.Given request headers and SessionToken(com/comcast/watchable/channels/VideosUnderChannel.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "request headers and SessionToken",
+            "match": {
+              "location": "VideosUnderChannel.request_headers_and_SessionToken()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "HttpRequest gets executed",
+            "match": {
+              "location": "VideosUnderChannel.httprequest_gets_executed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "validate status code as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "VideosUnderChannel.validate_status_code_as_OK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "response has totalItems and it has atleast one item in it",
+            "match": {
+              "location": "VideosUnderChannel.response_has_totalItems_and_it_has_atleast_one_item_in_it()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "response has link.self",
+            "match": {
+              "location": "VideosUnderChannel.response_has_link_self()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "validate response attributes are returned as not null",
+            "match": {
+              "location": "VideosUnderChannel.validate_response_attributes_are_returned_as_not_null()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "validate for video duration where it should not be zero",
+            "match": {
+              "location": "VideosUnderChannel.validate_for_video_duration_where_it_should_not_be_zero()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "channelTitle and channelId should not be empty",
+            "match": {
+              "location": "VideosUnderChannel.channeltitle_and_channelId_should_not_be_empty()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "[/channels/{channelId}/videos] As a User, view the videos under channel",
+    "description": "",
+    "id": "[/channels/{channelid}/videos]-as-a-user,-view-the-videos-under-channel",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/channels/VideosUnderChannel.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Given CuratedChannel GET url - fmds/api/{$tenant_id}/{$app_id}/curated/channels",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2054944,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.videos.VideoPlayBackUriAPI.http_request_headers(VideoPlayBackUriAPI.java:61)\r\n\tat ✽.Given HTTP request headers(com/comcast/watchable/curated/CuratedChannels.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "HTTP request headers",
+            "match": {
+              "location": "VideoPlayBackUriAPI.http_request_headers(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "Conteny-Type"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "application/json",
+                  "text/plain"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "HTTP GET method is executed",
+            "match": {
+              "location": "VideoPlayBackUriAPI.http_GET_method_is_executed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "VideoPlayBackUriAPI.status_code_should_be_OK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "cachecontrol header is having 120 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "120",
+                  "offset": 30
+                }
+              ],
+              "location": "CuratedChannelsAPI.cachecontrol_header_is_having_seconds(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Validate CuratedChannel API response",
+        "description": "",
+        "id": "get-curatedchannelsapi\u0027s---fmds/api/{$tenant-id}/{$app-id}/curated/channels;validate-curatedchannel-api-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "validate CuratedListType is PopularChannels",
+            "match": {
+              "location": "CuratedChannelsAPI.validate_CuratedListType_is_PopularChannels()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify genre is present",
+            "match": {
+              "location": "CuratedChannelsAPI.verify_genre_is_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "totalItems and totalChannels has same value",
+            "match": {
+              "location": "CuratedChannelsAPI.totalitems_and_totalChannels_has_same_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Verify the curatedItem\u0027s type is curatedChannel",
+            "match": {
+              "location": "CuratedChannelsAPI.verify_the_curatedItem_s_type_is_curatedChannel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Verify the curatedItem\u0027s title and curatedChannel title is same",
+            "match": {
+              "location": "CuratedChannelsAPI.verify_the_curatedItem_s_title_and_curatedChannel_title_is_same()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Verify the curatedChannel has some videos",
+            "match": {
+              "location": "CuratedChannelsAPI.verify_the_curatedChannel_has_some_videos()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Get CuratedChannelsAPI\u0027s - fmds/api/{$tenant_id}/{$app_id}/curated/channels",
+    "description": "",
+    "id": "get-curatedchannelsapi\u0027s---fmds/api/{$tenant-id}/{$app-id}/curated/channels",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/curated/CuratedChannels.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "curatedfeatured-api---fmds/api/{$tenant-id}/{$app-id}/curated/featured;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "method: fmds/api/watchable/\u003cplatform\u003e/curated/fetaured",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "SessionToken",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "Featured should be the value for attribute curatedListType",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "validate the curatedFeatured API has returned more than one item",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "totalItems and totalVideos has same value",
+            "match": {
+              "location": "CuratedFeaturedAPI.totalitems_and_totalVideos_has_same_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify Genre attribute is present",
+            "match": {
+              "location": "CuratedFeaturedAPI.verifyGenreAtrribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "curatedItems attribute is present",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "curatedItems type is CuratedVideo",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Title attribute is there and its value is \"$title\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "verify Video has ChannelId and ChannelTitle",
+            "match": {
+              "location": "CuratedFeaturedAPI.verify_Video_has_ChannelId_and_ChannelTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify cache control 120 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "120",
+                  "offset": 21
+                }
+              ],
+              "location": "CuratedFeaturedAPI.validateCacheControlHeader(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured",
+    "description": "",
+    "id": "curatedfeatured-api---fmds/api/{$tenant-id}/{$app-id}/curated/featured",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/curated/CuratedFeatured.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GetCuratedLists API",
+        "description": "",
+        "id": "get-curatedlistsapis---fmds/api/{$tenant-id}/{$app-id}/curatedlists;getcuratedlists-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 833145688,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET CuratedListsAPI and validate status as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 51
+                }
+              ],
+              "location": "CuratedListsAPITest.getCuratedListsStatus(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45585396,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "validate curatedlists has items",
+            "match": {
+              "location": "CuratedListsAPITest.validate_curatedlists_has_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53549,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "validate curatedItems has ID",
+            "match": {
+              "location": "CuratedListsAPITest.validate_curatedItems_has_ID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12896748548,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "genre of curatedlists and curatedlists/ID is same",
+            "match": {
+              "location": "CuratedListsAPITest.getGenreForCuratedItemsAndId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112453,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate totalVideos attribute is not ZERO and it contains some videos",
+            "match": {
+              "location": "CuratedListsAPITest.validateTotalVideosIsNotZero()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56226,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate totalVideoDuration attribute is not ZERO",
+            "match": {
+              "location": "CuratedListsAPITest.validate_totalVideoDuration_attribute_is_not_ZERO()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 677243046,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "CacheControl Header is set to 120 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "120",
+                  "offset": 30
+                }
+              ],
+              "location": "CuratedListsAPITest.cache_Control_header_is_set_to_seconds(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists",
+    "description": "",
+    "id": "get-curatedlistsapis---fmds/api/{$tenant-id}/{$app-id}/curatedlists",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/curated/CuratedLists.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GetCuratedVideos API",
+        "description": "",
+        "id": "get-curatedvideosapi\u0027s---fmds/api/{$tenant-id}/{$app-id}/curated/videos;getcuratedvideos-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 605448078,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET /fds/api/watchable/web/curated/videos and Verify response as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 73
+                }
+              ],
+              "location": "CuratedVideosAPI.verifyCuratedVideosStatus(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282025,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify 120 seconds for cache-control header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "120",
+                  "offset": 7
+                }
+              ],
+              "location": "CuratedVideosAPI.verify_seconds_for_cache_control_header(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8205496,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "validate curatedVideos api has returned more than zero item",
+            "match": {
+              "location": "CuratedVideosAPI.validate_curatedVideos_api_has_returned_more_than_zero_item()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 65597,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify totalItems and totalVideos has same count",
+            "match": {
+              "location": "CuratedVideosAPI.verify_totalItems_and_totalVideos_has_same_count()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 67383,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify CuratedListType argument\u0027s key value is FeaturedVideos",
+            "match": {
+              "location": "CuratedVideosAPI.verify_CuratedListType_argument_s_key_value_is_FeaturedVideos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49532,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify for the presence of GENRE attribute",
+            "match": {
+              "location": "CuratedVideosAPI.verify_for_the_presence_of_GENRE_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78092,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify curatedItems\u0027s TYPE is CuratedVideo",
+            "match": {
+              "location": "CuratedVideosAPI.verify_curatedItems_s_TYPE_is_CuratedVideo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69614,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify VideoList has Type as video",
+            "match": {
+              "location": "CuratedVideosAPI.verify_VideoList_has_Type_as_video()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61581,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify VideoList has id",
+            "match": {
+              "location": "CuratedVideosAPI.verify_VideList_has_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54888,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify VideoList has channelTitle",
+            "match": {
+              "location": "CuratedVideosAPI.verify_VideoList_has_channelTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58457,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify videoList has ChannelId",
+            "match": {
+              "location": "CuratedVideosAPI.verify_videoList_has_ChannelId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81662,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify video\u0027s duration is not zero",
+            "match": {
+              "location": "CuratedVideosAPI.verify_video_s_duration_is_not_zero()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get CuratedVideosAPI\u0027s - fmds/api/{$tenant_id}/{$app_id}/curated/videos",
+    "description": "",
+    "id": "get-curatedvideosapi\u0027s---fmds/api/{$tenant-id}/{$app-id}/curated/videos",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/curated/CuratedVideos.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GET Genres",
+        "description": "",
+        "id": "get-genres-api---fmds/api/{$tenant-id}/{$app-id}/genres;get-genres",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 580919053,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET /genres API",
+            "match": {
+              "location": "GenresAPI.method_GET_genres_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 302106,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Status code as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "GenresAPI.status_code_as_OK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9412580,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "validate totalItems attribute and its value is more than zero",
+            "match": {
+              "location": "GenresAPI.validate_totalItems_attribute_and_its_value_is_more_than_zero()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62921,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate Links attribute",
+            "match": {
+              "location": "GenresAPI.validate_Links_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49087,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate Links has self attribute",
+            "match": {
+              "location": "GenresAPI.validate_Links_has_self_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47302,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate Items attribute",
+            "match": {
+              "location": "GenresAPI.validate_Items_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59350,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate Items.totalChannels",
+            "match": {
+              "location": "GenresAPI.validate_Items_totalChannels()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53996,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate Items.totalShows",
+            "match": {
+              "location": "GenresAPI.validate_Items_totalShows()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48640,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validate Items.totalVideos",
+            "match": {
+              "location": "GenresAPI.validate_Items_totalVideos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50425,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate Items.totalItems",
+            "match": {
+              "location": "GenresAPI.validate_Items_totalItems()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49533,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "validate Items.type",
+            "match": {
+              "location": "GenresAPI.validate_Items_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 63366,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate Items.title",
+            "match": {
+              "location": "GenresAPI.validate_Items_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57565,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "validate Items.id",
+            "match": {
+              "location": "GenresAPI.validate_Items_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34807,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "validate Items.links",
+            "match": {
+              "location": "GenresAPI.validate_Items_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30791,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "validate Items.links has self",
+            "match": {
+              "location": "GenresAPI.validate_Items_links_has_self()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres",
+    "description": "",
+    "id": "get-genres-api---fmds/api/{$tenant-id}/{$app-id}/genres",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/genres/Genres.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "First- ChannelsByPublisherAPI",
+        "description": "",
+        "id": "get-channelsbypublisherapi---fmds/api/{$tenant-id}/{$app-id}/publishers/\u003cpublisherid\u003e/channels;first--channelsbypublisherapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 543514610,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET /fmds/api/watchable/web/publishers/\u003cpublisherId\u003e/channels",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.method_GET_fmds_api_watchable_web_publishers_publisherId_channels()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2089751,
+              "error_message": "java.lang.AssertionError: expected [200] but found [404]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\r\n\tat org.testng.Assert.assertEquals(Assert.java:125)\r\n\tat org.testng.Assert.assertEquals(Assert.java:372)\r\n\tat org.testng.Assert.assertEquals(Assert.java:382)\r\n\tat com.comcast.watchable.publishers.ChannelsByGenreForPublisher.response_is_OK(ChannelsByGenreForPublisher.java:57)\r\n\tat ✽.When response is 200 OK(com/comcast/watchable/publisher/ChannelsByGenreForPublisher.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "response is 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "ChannelsByGenreForPublisher.response_is_OK(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "validate totalItems shouldn\u0027t be zero",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_totalItems_shouldn_t_be_zero()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "verify publishers_genre_channels_all attribute under links",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.verify_publishers_genre_channels_all_attribute_under_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "validate items",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify that type should be channel",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.verify_that_type_should_be_channel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "validate that id shouldn\u0027t be null",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_that_id_shouldn_t_be_null()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "title shouldnot be null",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "validate for description",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_for_description()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "video count should not be null and greater than zero",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.video_count_should_not_be_null_and_greater_than_zero()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify for last Update Time stamp",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.verify_for_last_Update_Time_stamp()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify for parentalGuidance is present",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.verify_for_parentalGuidance_is_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "validate items.links presence",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_presence()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "validate items.links.logoImage",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_logoImage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "validate items.links.paginateShowsAll",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_paginateShowsAll()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "validate items.links.templateImage",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_templateImage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "validate items.links.sharelink",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_sharelink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "validate items.links.channels-videos",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_channels_videos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "validate items.links.subscription-status",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_subscription_status()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "validate items.links.paginateShowsTemplate",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_paginateShowsTemplate()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "validate items.links.channels-allvideos",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_channels_allvideos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "validate items.links.genre",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_genre()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "validate items.links.self",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_self()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "validate items.links.publisher",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_publisher()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "validate items.links.defaultImage",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_defaultImage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "validate items.links.paginateShowsAndVideos",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_paginateShowsAndVideos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "validate items.links.cell-image",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_cell_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "validate items.links.paginateShowsAndVideosTemplate",
+            "match": {
+              "location": "ChannelsByGenreForPublisher.validate_items_links_paginateShowsAndVideosTemplate()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/\u003cpublisherId\u003e/channels",
+    "description": "",
+    "id": "get-channelsbypublisherapi---fmds/api/{$tenant-id}/{$app-id}/publishers/\u003cpublisherid\u003e/channels",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/publisher/ChannelsByGenreForPublisher.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "one- GetPublisherId API",
+        "description": "",
+        "id": "fmds/api/{$tenant-id}/{$app-id}/publishers/\u003cpublisherid\u003e;one--getpublisherid-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 578484803,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET /fmds/api/watchable/web/publishers/\u003cpublisherId\u003e and Verify response as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 84
+                }
+              ],
+              "location": "PublisherById.method_GET_fmds_api_watchable_web_publishers_publisherId_and_Verify_response_as_OK(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5452184,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify publisher id and its value",
+            "match": {
+              "location": "PublisherById.verify_publisher_id_and_its_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 113792,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "validate for publisher\u0027s name",
+            "match": {
+              "location": "PublisherById.validate_for_publisher_s_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58458,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check for the description",
+            "match": {
+              "location": "PublisherById.check_for_the_description()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28114,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate for the count of channels",
+            "match": {
+              "location": "PublisherById.validate_for_the_count_of_channels()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30344,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate for count of shows",
+            "match": {
+              "location": "PublisherById.validate_for_count_of_shows()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27220,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify for number of videos from that publisher",
+            "match": {
+              "location": "PublisherById.verify_for_number_of_videos_from_that_publisher()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28113,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate last Updated Time stamp",
+            "match": {
+              "location": "PublisherById.validate_last_Updated_Time_stamp()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27221,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify the busniess ID",
+            "match": {
+              "location": "PublisherById.verify_the_busniess_ID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27221,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify the links presence",
+            "match": {
+              "location": "PublisherById.verify_the_links_presence()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28113,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify  link has channel Page Template",
+            "match": {
+              "location": "PublisherById.verify_link_has_channel_Page_Template()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29006,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate link for the image Uri",
+            "match": {
+              "location": "PublisherById.validate_link_for_the_image_Uri()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27221,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "validate link forchannel Page",
+            "match": {
+              "location": "PublisherById.validate_link_forchannel_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26774,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify for link for self",
+            "match": {
+              "location": "PublisherById.verify_for_link_for_self()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27221,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify links for genre channels",
+            "match": {
+              "location": "PublisherById.verify_links_for_genre_channels()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "fmds/api/{$tenant_id}/{$app_id}/publishers/\u003cpublisherId\u003e",
+    "description": "",
+    "id": "fmds/api/{$tenant-id}/{$app-id}/publishers/\u003cpublisherid\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/publisher/PublisherById.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Post UsersChannelsFollow API",
+        "description": "",
+        "id": "channel-follow-\u003efollowedchannel-\u003eunfollow---fmds/api/{$tenant-id}/{$app-id}/users/channels/\u003cchannelid\u003e/follow;post-userschannelsfollow-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 294966,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: POST channels/channelId/follow Follow Channel API",
+            "match": {
+              "location": "ChannelsUnFollow.method_POST_channels_channelId_follow_Follow_Channel_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 420806,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.channels.ChannelsUnFollow.verify_response_as_No_Content(ChannelsUnFollow.java:73)\r\n\tat ✽.Then Verify response as 204 No Content(com/comcast/watchable/users/UsersChannels/ChannelsUnFollow.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Verify response as 204 No Content",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 19
+                }
+              ],
+              "location": "ChannelsUnFollow.verify_response_as_No_Content(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "channel is followed",
+            "match": {
+              "location": "ChannelsUnFollow.channel_is_followed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Check if User Followed a Channel",
+        "description": "",
+        "id": "channel-follow-\u003efollowedchannel-\u003eunfollow---fmds/api/{$tenant-id}/{$app-id}/users/channels/\u003cchannelid\u003e/follow;check-if-user-followed-a-channel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45070,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "method: GET channels/channelId/follow - FollowAPI",
+            "match": {
+              "location": "ChannelsUnFollow.method_GET_channels_channelId_follow_FollowAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 337358,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.channels.ChannelsUnFollow.status_should_be_No_Content(ChannelsUnFollow.java:111)\r\n\tat ✽.Then status should be 204 No Content(com/comcast/watchable/users/UsersChannels/ChannelsUnFollow.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "status should be 204 No Content",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 17
+                }
+              ],
+              "location": "ChannelsUnFollow.status_should_be_No_Content(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "User\u0027s all followed channels API",
+        "description": "",
+        "id": "channel-follow-\u003efollowedchannel-\u003eunfollow---fmds/api/{$tenant-id}/{$app-id}/users/channels/\u003cchannelid\u003e/follow;user\u0027s-all-followed-channels-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36592,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "method: GET users/channels/follow - FollowAPI",
+            "match": {
+              "location": "ChannelsUnFollow.method_GET_users_channels_follow_FollowAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 688028713,
+              "error_message": "java.lang.AssertionError: expected [200] but found [404]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\r\n\tat org.testng.Assert.assertEquals(Assert.java:125)\r\n\tat org.testng.Assert.assertEquals(Assert.java:372)\r\n\tat org.testng.Assert.assertEquals(Assert.java:382)\r\n\tat com.comcast.watchable.users.channels.ChannelsUnFollow.response_code_is_OK(ChannelsUnFollow.java:149)\r\n\tat ✽.Then response code is 200 OK(com/comcast/watchable/users/UsersChannels/ChannelsUnFollow.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "response code is 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 17
+                }
+              ],
+              "location": "ChannelsUnFollow.response_code_is_OK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "verify followed Channels for the user",
+            "match": {
+              "location": "ChannelsUnFollow.verify_followed_Channels_for_the_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "followed channel is available here",
+            "match": {
+              "location": "ChannelsUnFollow.followed_channel_is_available_here()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "totalItems is greater than zero",
+            "match": {
+              "location": "ChannelsUnFollow.totalitems_is_greater_than_zero()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "links has its self url",
+            "match": {
+              "location": "ChannelsUnFollow.links_has_its_self_url()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "items array has channel",
+            "match": {
+              "location": "ChannelsUnFollow.items_array_has_channel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "items array has id",
+            "match": {
+              "location": "ChannelsUnFollow.items_array_has_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "items has title",
+            "match": {
+              "location": "ChannelsUnFollow.items_has_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "verify numOfVideos is greater than zero",
+            "match": {
+              "location": "ChannelsUnFollow.verify_numOfVideos_is_greater_than_zero()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "User Unfollow\u0027s Channel API",
+        "description": "",
+        "id": "channel-follow-\u003efollowedchannel-\u003eunfollow---fmds/api/{$tenant-id}/{$app-id}/users/channels/\u003cchannelid\u003e/follow;user-unfollow\u0027s-channel-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 166895,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "method: DELETE channels/channlID/follow UnFollowAPI",
+            "match": {
+              "location": "ChannelsUnFollow.method_DELETE_channels_channlID_follow_UnFollowAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 547860560,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "UnFollowAPI and status code as 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 31
+                }
+              ],
+              "location": "ChannelsUnFollow.unfollowapi_and_status_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Channel Follow-\u003eFollowedChannel-\u003eUnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/\u003cchannelId\u003e/follow",
+    "description": "",
+    "id": "channel-follow-\u003efollowedchannel-\u003eunfollow---fmds/api/{$tenant-id}/{$app-id}/users/channels/\u003cchannelid\u003e/follow",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/users/UsersChannels/ChannelsUnFollow.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GET Users VideoId Details API",
+        "description": "",
+        "id": "get-user\u0027s-specific-video-id-details-api---fmds/api/{$tenant-id}/{$app-id}/users/videos/\u003cvideoid\u003e;get-users-videoid-details-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 598410,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.videos.GETUsersVideos.method_GET_users_videos_id_api(GETUsersVideos.java:38)\r\n\tat ✽.Given method: GET users videos id api(com/comcast/watchable/users/UsersVideos/GETUsersVideos.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "method: GET users videos id api",
+            "match": {
+              "location": "GETUsersVideos.method_GET_users_videos_id_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "validate type",
+            "match": {
+              "location": "GETUsersVideos.validate_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "validate the videoId",
+            "match": {
+              "location": "GETUsersVideos.validate_the_videoId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "validate the video position",
+            "match": {
+              "location": "GETUsersVideos.validate_the_video_position()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "verify the positionSeconds",
+            "match": {
+              "location": "GETUsersVideos.verify_the_positionSeconds()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "validate the duration",
+            "match": {
+              "location": "GETUsersVideos.validate_the_duration()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify for links and playbackItems",
+            "match": {
+              "location": "GETUsersVideos.verify_for_links_and_playbackItems()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "validate links has flagAsset like attributes",
+            "match": {
+              "location": "GETUsersVideos.validate_links_has_flagAsset_like_attributes()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET User\u0027s Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/\u003cvideoId\u003e",
+    "description": "",
+    "id": "get-user\u0027s-specific-video-id-details-api---fmds/api/{$tenant-id}/{$app-id}/users/videos/\u003cvideoid\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/users/UsersVideos/GETUsersVideos.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GET users ViewHistory API",
+        "description": "",
+        "id": "get-user\u0027sviewhistory-api---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos;get-users-viewhistory-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 122717,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET UsersViewHistory api",
+            "match": {
+              "location": "GETUserViewHistory.method_GET_UsersViewHistory_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 450705,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.viewHistory.GETUserViewHistory.put_Viewhistory_api_gets_executed(GETUserViewHistory.java:31)\r\n\tat ✽.When Put Viewhistory api gets executed(com/comcast/watchable/users/UsersViewHistory/GETUserViewHistory.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Put Viewhistory api gets executed",
+            "match": {
+              "location": "GETUserViewHistory.put_Viewhistory_api_gets_executed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "GET viewhistory status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "GETUserViewHistory.get_viewhistory_status_code_should_be_OK(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET User\u0027sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos",
+    "description": "",
+    "id": "get-user\u0027sviewhistory-api---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/users/UsersViewHistory/GETUserViewHistory.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "DELETE users ViewHistory API",
+        "description": "",
+        "id": "delete-user\u0027sviewhistory-api---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos;delete-users-viewhistory-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 605707344,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: DELETE UsersViewHistory api",
+            "match": {
+              "location": "UserViewHistoryDeleteAll.method_DELETE_UsersViewHistory_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 794757,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.viewHistory.UserViewHistoryDeleteSingle.verify_the_status_code_as(UserViewHistoryDeleteSingle.java:71)\r\n\tat ✽.Then verify the status code as 204(com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteAll.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "verify the status code as 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 26
+                }
+              ],
+              "location": "UserViewHistoryDeleteSingle.verify_the_status_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "DELETE User\u0027sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos",
+    "description": "",
+    "id": "delete-user\u0027sviewhistory-api---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteAll.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "PUT users video progress API - PUT http://fabric.xidio.com/fmds/api/watchable/iptv/users/videos/74877/20",
+        "description": "",
+        "id": "progressevent\u0026viewhistorysingledelete---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos/\u003cvideoid\u003e;put-users-video-progress-api---put-http://fabric.xidio.com/fmds/api/watchable/iptv/users/videos/74877/20",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 482834,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.viewHistory.UserViewHistoryDeleteSingle.method_videoProgress_API(UserViewHistoryDeleteSingle.java:35)\r\n\tat ✽.Given method: videoProgress API(com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteSingle.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "method: videoProgress API",
+            "match": {
+              "location": "UserViewHistoryDeleteSingle.method_videoProgress_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "verify the status code as 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 26
+                }
+              ],
+              "location": "UserViewHistoryDeleteSingle.verify_the_status_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "DELETE users ViewHistory API - DELETE http://fabric.xidio.com/fmds/api/watchable/iptv/users/viewhistory/videos",
+        "description": "",
+        "id": "progressevent\u0026viewhistorysingledelete---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos/\u003cvideoid\u003e;delete-users-viewhistory-api---delete-http://fabric.xidio.com/fmds/api/watchable/iptv/users/viewhistory/videos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61581,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "method: DELETE single video from User\u0027s view history api",
+            "match": {
+              "location": "UserViewHistoryDeleteSingle.method_DELETE_single_video_from_User_s_view_history_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 329773,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.users.viewHistory.UserViewHistoryDeleteSingle.verify_the_status_code_as(UserViewHistoryDeleteSingle.java:71)\r\n\tat ✽.Then verify the status code as 204(com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteSingle.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "verify the status code as 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 26
+                }
+              ],
+              "location": "UserViewHistoryDeleteSingle.verify_the_status_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "GET users ViewHistory API - GET http://fabric.xidio.com/fmds/api/watchable/iptv/users/viewhistory/videos",
+        "description": "",
+        "id": "progressevent\u0026viewhistorysingledelete---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos/\u003cvideoid\u003e;get-users-viewhistory-api---get-http://fabric.xidio.com/fmds/api/watchable/iptv/users/viewhistory/videos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1554182023,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "method: GET user\u0027s viewHistory api",
+            "match": {
+              "location": "UserViewHistoryDeleteSingle.method_GET_user_s_viewHistory_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 761091455,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify the status code",
+            "match": {
+              "location": "ChannelByIdAPI.verify_the_status_code()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ProgressEvent\u0026ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/\u003cvideoId\u003e",
+    "description": "",
+    "id": "progressevent\u0026viewhistorysingledelete---fmds/api/{$tenant-id}/{$app-id}/users/viewhistory/videos/\u003cvideoid\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteSingle.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GET EmailLookUp api",
+        "description": "",
+        "id": "get-emaillookup-api---fmds/api/{$tenant-id}/{$app-id}/users/profile/emails/\u003cemail\u003e;get-emaillookup-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 243202,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET users/profiles/email/\u003cemail\u003e",
+            "match": {
+              "location": "EmailLookUpAPI.method_GET_users_profile_email_email()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160201,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Http Get Method is executed",
+            "match": {
+              "location": "EmailLookUpAPI.http_Get_Method_is_executed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 640808287,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "204 No Content status should come",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 0
+                }
+              ],
+              "location": "EmailLookUpAPI.no_Content_status_should_come(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/\u003cemail\u003e",
+    "description": "",
+    "id": "get-emaillookup-api---fmds/api/{$tenant-id}/{$app-id}/users/profile/emails/\u003cemail\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/usersProfile/EmailLookUp.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "One- GET usersProfile api",
+        "description": "",
+        "id": "get-usersprofile-api---fmds/api/{$tenant-id}/{$app-id}/users/profile;one--get-usersprofile-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 323079,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET users/profile",
+            "match": {
+              "location": "GetUserProfile.method_GET_users_profile()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 610834218,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "status should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 17
+                }
+              ],
+              "location": "GetUserProfile.status_should_be_OK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2857287,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "userId attribute shoul dnot be null",
+            "match": {
+              "location": "GetUserProfile.userid_attribute_shoul_dnot_be_null()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66937,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate userName",
+            "match": {
+              "location": "GetUserProfile.validate_userName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43732,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate email",
+            "match": {
+              "location": "GetUserProfile.validate_email()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43732,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate emailStatus",
+            "match": {
+              "location": "GetUserProfile.validate_emailStatus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32576,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate mobileStatus",
+            "match": {
+              "location": "GetUserProfile.validate_mobileStatus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40608,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate registrationDate",
+            "match": {
+              "location": "GetUserProfile.validate_registrationDate()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile",
+    "description": "",
+    "id": "get-usersprofile-api---fmds/api/{$tenant-id}/{$app-id}/users/profile",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/usersProfile/GetUserProfile.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GET userNameLookUp api",
+        "description": "",
+        "id": "get-usernamelookup-api---fmds/api/{$tenant-id}/{$app-id}/users/profile/usernames/\u003cusername\u003e;get-usernamelookup-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 398940,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET users/profile/usernames/\u003cusername\u003e",
+            "match": {
+              "location": "UserNameLookUpAPI.method_GET_users_profile_usernames_username()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155738,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Http method gets exected",
+            "match": {
+              "location": "UserNameLookUpAPI.http_method_gets_exected()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 601576037,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "status code should be 204 No Content",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 22
+                }
+              ],
+              "location": "UserNameLookUpAPI.status_code_should_be_No_Content(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/\u003cusername\u003e",
+    "description": "",
+    "id": "get-usernamelookup-api---fmds/api/{$tenant-id}/{$app-id}/users/profile/usernames/\u003cusername\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/usersProfile/UserNameLookUp.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "One- POST usersProfile api",
+        "description": "",
+        "id": "post-usersprofile-api---fmds/api/{$tenant-id}/{$app-id}/users/profile;one--post-usersprofile-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "method: POST UsersProfile api and verify the status code as 200 OK",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "validate cache-control header",
+            "match": {
+              "location": "VideoPlaylistAPI.validate_cache_control_header()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile",
+    "description": "",
+    "id": "post-usersprofile-api---fmds/api/{$tenant-id}/{$app-id}/users/profile",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/usersProfile/UsersProfile.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Given videoPlayBackUri GET url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 508716,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.videos.VideoPlayBackUriAPI.http_request_headers(VideoPlayBackUriAPI.java:61)\r\n\tat ✽.Given HTTP request headers(com/comcast/watchable/videos/VideoPlayBackUri.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "HTTP request headers",
+            "match": {
+              "location": "VideoPlayBackUriAPI.http_request_headers(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Accept",
+                  "Conteny-Type"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "application/json",
+                  "text/plain"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "HTTP GET method is executed",
+            "match": {
+              "location": "VideoPlayBackUriAPI.http_GET_method_is_executed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "VideoPlayBackUriAPI.status_code_should_be_OK(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "get-playbackuri;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "type attribute is video",
+            "match": {
+              "location": "VideoPlayBackUriAPI.type_attribute_is_video(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "type",
+                  "video"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "attribute logData should not be null",
+            "match": {
+              "location": "VideoPlayBackUriAPI.attribute_logData_should_not_be_null()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "links attribute should be there",
+            "match": {
+              "location": "VideoPlayBackUriAPI.links_attribute_should_be_there()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "playbackItems is present",
+            "match": {
+              "location": "VideoPlayBackUriAPI.playbackitems_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "playbackItems had uri attribute",
+            "match": {
+              "location": "VideoPlayBackUriAPI.playbackitems_had_uri_attribute()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "playbackItems has mediaFormat as mp4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 35
+                }
+              ],
+              "location": "VideoPlayBackUriAPI.playbackitems_has_mediaFormat_as_mp(int,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "mediaFormat",
+                  "mp4"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "playbackItems has bitrate",
+            "match": {
+              "location": "VideoPlayBackUriAPI.playbackitems_has_bitrate(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "bitrate",
+                  "mp4"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "playbackItems has logUri",
+            "match": {
+              "location": "VideoPlayBackUriAPI.playbackitems_has_logUri()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Get PlayBackUri",
+    "description": "",
+    "id": "get-playbackuri",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/videos/VideoPlayBackUri.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "One- GET videoPlaylist api",
+        "description": "",
+        "id": "get-videoplaylistapi---fmds/api/{$tenant-id}/{$app-id}/videos/\u003cvideoid\u003e/playlist;one--get-videoplaylist-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 390908,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.videos.VideoPlaylistAPI.method_GET_videoPlaylist_api_and_verify_the_status_code_as_OK(VideoPlaylistAPI.java:55)\r\n\tat ✽.Given method: GET videoPlaylist api and verify the status code as 200 OK(com/comcast/watchable/videos/VideoPlaylist.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "method: GET videoPlaylist api and verify the status code as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 60
+                }
+              ],
+              "location": "VideoPlaylistAPI.method_GET_videoPlaylist_api_and_verify_the_status_code_as_OK(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "validate cache-control header",
+            "match": {
+              "location": "VideoPlaylistAPI.validate_cache_control_header()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "verify pageNum is present",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_pageNum_is_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "check for pageSize",
+            "match": {
+              "location": "VideoPlaylistAPI.check_for_pageSize()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "verify for the attribute totalItems",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_for_the_attribute_totalItems()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify for links",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_for_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify for items",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_for_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify items has type as Video",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_type_as_Video()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "verify items has id",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "verify items has title and its value",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_title_and_its_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify items has shortDescription",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_shortDescription()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify items has longDescription",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_longDescription()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "verify items has liveBroadcastTime",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_liveBroadcastTime()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify items has createTime",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_createTime()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "verify items has channelTitle",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_channelTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "verify items has episode",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_episode()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "verify items has duration",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_duration()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "verify videos have proper duration and its not zero seconds",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_videos_have_proper_duration_and_its_not_zero_seconds()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "verify items has parentalGuidance field",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_parentalGuidance_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "verify items has channelId",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_channelId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "verify items has externalId",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_externalId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "verify items has publishTime",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_publishTime()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "verify items has onDemandTimeBegin",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_onDemandTimeBegin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "verify items has onDemandTimeEnd",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_onDemandTimeEnd()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "verify items has links",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "verify items has logo-image",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_logo_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "verify items has userVideoDetails",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_userVideoDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "verify items has template-mage",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_template_mage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "verify items has shareLink",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_shareLink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "verify items has channel",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_channel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "verify items has self",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_self()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "verify items has publisher",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_publisher()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "verify items has default-image",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_default_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "verify items has cell-image",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_cell_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "verify items has channel-subscription-status",
+            "match": {
+              "location": "VideoPlaylistAPI.verify_items_has_channel_subscription_status()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/\u003cvideoId\u003e/playlist",
+    "description": "",
+    "id": "get-videoplaylistapi---fmds/api/{$tenant-id}/{$app-id}/videos/\u003cvideoid\u003e/playlist",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/videos/VideoPlaylist.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "One- GET videoId api",
+        "description": "",
+        "id": "get-videobyid-api---fmds/api/{$tenant-id}/{$app-id}/videos/\u003cvideoid\u003e;one--get-videoid-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 321294,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat com.comcast.watchable.videos.VideoByIdAPI.getVideosByIdAPI(VideoByIdAPI.java:50)\r\n\tat ✽.Given method: GET videosbyId api(com/comcast/watchable/videos/VideosById.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "method: GET videosbyId api",
+            "match": {
+              "location": "VideoByIdAPI.getVideosByIdAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "verify the status code as 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 26
+                }
+              ],
+              "location": "VideoByIdAPI.verify_the_status_code_as_OK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "validate cache-control header is 3600 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3600",
+                  "offset": 33
+                }
+              ],
+              "location": "VideoByIdAPI.validate_cache_control_header_is_seconds(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "validate type is Video",
+            "match": {
+              "location": "VideoByIdAPI.validate_type_is_Video()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify for id and its value",
+            "match": {
+              "location": "VideoByIdAPI.verify_for_id_and_its_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify shortDescription",
+            "match": {
+              "location": "VideoByIdAPI.verify_shortDescription()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify longDescription",
+            "match": {
+              "location": "VideoByIdAPI.verify_longDescription()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "verify liveBroadcastTime and its value",
+            "match": {
+              "location": "VideoByIdAPI.verify_liveBroadcastTime_and_its_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "verify createTime attribute is present",
+            "match": {
+              "location": "VideoByIdAPI.verify_createTime_attribute_is_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify the ChannelTitle",
+            "match": {
+              "location": "VideoByIdAPI.verify_the_ChannelTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify episode attribute is there",
+            "match": {
+              "location": "VideoByIdAPI.verify_episode_attribute_is_there()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "verify for the presence of duration",
+            "match": {
+              "location": "VideoByIdAPI.verify_for_the_presence_of_duration()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the parental guidance",
+            "match": {
+              "location": "VideoByIdAPI.verify_the_parental_guidance()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "verify the channelId",
+            "match": {
+              "location": "VideoByIdAPI.verify_the_channelId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "check the publishTime",
+            "match": {
+              "location": "VideoByIdAPI.check_the_publishTime()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "verify links",
+            "match": {
+              "location": "VideoByIdAPI.verify_links()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "verify links has userVideoDetails",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_userVideoDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "verify links has templateImage",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_templateImage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "verify links has sharelink",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_sharelink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "verify links has channel",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_channel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "verify links has self",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_self()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "verify links has publisher",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_publisher()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "verify links has defaultImage",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_defaultImage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "verify links has cellImage",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_cellImage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "verify links has channelSubscriptionStatus link",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_channelSubscriptionStatus_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "verify for the presence of playbackItems",
+            "match": {
+              "location": "VideoByIdAPI.verify_for_the_presence_of_playbackItems()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "verify links has logoImage",
+            "match": {
+              "location": "VideoByIdAPI.verify_links_has_logoImage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Two - Video Id with non-integer variable",
+        "description": "",
+        "id": "get-videobyid-api---fmds/api/{$tenant-id}/{$app-id}/videos/\u003cvideoid\u003e;two---video-id-with-non-integer-variable",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 66043,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "method: GET Videos API",
+            "match": {
+              "location": "VideoByIdAPI.method_GET_Videos_API()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 35,
+            "value": "# Then verify status code as BADREQUEST"
+          }
+        ],
+        "line": 37,
+        "name": "Three- Invalid videoId like 10",
+        "description": "",
+        "id": "get-videobyid-api---fmds/api/{$tenant-id}/{$app-id}/videos/\u003cvideoid\u003e;three--invalid-videoid-like-10",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102635,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "methog GET videos/10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 18
+                }
+              ],
+              "location": "VideoByIdAPI.methog_GET_videos(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 588792992,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "verify the status code as 404 Not Found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 26
+                }
+              ],
+              "location": "VideoByIdAPI.verify_the_status_code_as_Not_Found(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/\u003cvideoID\u003e",
+    "description": "",
+    "id": "get-videobyid-api---fmds/api/{$tenant-id}/{$app-id}/videos/\u003cvideoid\u003e",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/videos/VideosById.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "One- GET some videos based on Pagination parameter",
+        "description": "",
+        "id": "get-videowithpagination---fmds/api/{$tenant-id}/{$app-id}/videos?pagenum\u003d1\u0026pagesize\u003d2;one--get-some-videos-based-on-pagination-parameter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 575769422,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "method: GET VideosWithPagination api",
+            "match": {
+              "location": "VideosWithPagination.method_GET_VideosWithPagination_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3859547,
+              "error_message": "org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field \"pageNum\" (Class com.comcast.model.channel.videos.ChannelVideos), not marked as ignorable\n at [Source: org.apache.http.client.entity.LazyDecompressingInputStream@226642a5; line: 1, column: 13] (through reference chain: com.comcast.model.channel.videos.ChannelVideos[\"pageNum\"])\r\n\tat org.codehaus.jackson.map.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:53)\r\n\tat org.codehaus.jackson.map.deser.StdDeserializationContext.unknownFieldException(StdDeserializationContext.java:267)\r\n\tat org.codehaus.jackson.map.deser.std.StdDeserializer.reportUnknownProperty(StdDeserializer.java:673)\r\n\tat org.codehaus.jackson.map.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:659)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer.handleUnknownProperty(BeanDeserializer.java:1365)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer._handleUnknown(BeanDeserializer.java:725)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:703)\r\n\tat org.codehaus.jackson.map.deser.BeanDeserializer.deserialize(BeanDeserializer.java:580)\r\n\tat org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2732)\r\n\tat org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1909)\r\n\tat com.comcast.watchable.videos.VideosWithPagination.validate_for_totalItems_attribute(VideosWithPagination.java:69)\r\n\tat ✽.Then Validate for totalItems attribute(com/comcast/watchable/videos/VideosWithPagination.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Validate for totalItems attribute",
+            "match": {
+              "location": "VideosWithPagination.validate_for_totalItems_attribute()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "validate Items and its attributes",
+            "match": {
+              "location": "VideosWithPagination.validate_Items_and_its_attributes()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum\u003d1\u0026pageSize\u003d2",
+    "description": "",
+    "id": "get-videowithpagination---fmds/api/{$tenant-id}/{$app-id}/videos?pagenum\u003d1\u0026pagesize\u003d2",
+    "keyword": "Feature",
+    "uri": "com/comcast/watchable/videos/VideosWithPagination.feature"
+  }
+]

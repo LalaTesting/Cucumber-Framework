@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 14 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\ravindra.parauha\AppData\Local\Temp\testng-eclipse--50500284\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 14 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/&lt;videoId&gt;/playlist)">feature(Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/<videoId>/playlist)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Channel Follow-&gt;FollowedChannel-&gt;UnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/&lt;channelI...)">feature(Channel Follow->FollowedChannel->UnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/<channelI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/&lt;channelId&gt;)">feature(Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/<channelId>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET User&#039;s Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/&lt;videoId&gt;)">feature(GET User's Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/<videoId>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(ProgressEvent&amp;ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/&lt;vi...)">feature(ProgressEvent&ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/<vi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/&lt;videoID&gt;)">feature(Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/<videoID>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET User&#039;sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)">feature(GET User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(DELETE User&#039;sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)">feature(DELETE User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/&lt;publisherId&gt;/channels)">feature(Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>/channels)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get PlayBackUri)">feature(Get PlayBackUri)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum=1&amp;pageSize=2)">feature(GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum=1&pageSize=2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get CuratedChannelsAPI&#039;s - fmds/api/{$tenant_id}/{$app_id}/curated/channels)">feature(Get CuratedChannelsAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/channels)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature([/channels/{channelId}/videos] As a User, view the videos under channel)">feature([/channels/{channelId}/videos] As a User, view the videos under channel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum=1&amp;pageSize=2)">feature(GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum=1&pageSize=2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:season...)">feature(Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:season...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)">feature(GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured)">feature(CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/&lt;email&gt;)">feature(GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/<email>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists)">feature(Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(fmds/api/{$tenant_id}/{$app_id}/publishers/&lt;publisherId&gt;)">feature(fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(Get CuratedVideosAPI&#039;s - fmds/api/{$tenant_id}/{$app_id}/curated/videos)">feature(Get CuratedVideosAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/videos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres)">feature(GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/&lt;username&gt;)">feature(GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/<username>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="feature(POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)">feature(POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.comcast.watchable.CucumberRunnerTest" hash-for-method="testApp">testApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.comcast.watchable.CucumberRunnerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/&lt;videoId&gt;/playlist)">
+                  </a> <!-- feature(Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/<videoId>/playlist) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/<videoId>/playlist)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.videos.VideoPlaylistAPI.method_GET_videoPlaylist_api_and_verify_the_status_code_as_OK(VideoPlaylistAPI.java:55)
+	at ?.Given method: GET videoPlaylist api and verify the status code as 200 OK(com/comcast/watchable/videos/VideoPlaylist.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Channel Follow-&gt;FollowedChannel-&gt;UnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/&lt;channelI...)">
+                  </a> <!-- feature(Channel Follow->FollowedChannel->UnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/<channelI...) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Channel Follow->FollowedChannel->UnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/<channelId>/follow)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.users.channels.ChannelsUnFollow.verify_response_as_No_Content(ChannelsUnFollow.java:73)
+	at ?.Then Verify response as 204 No Content(com/comcast/watchable/users/UsersChannels/ChannelsUnFollow.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/&lt;channelId&gt;)">
+                  </a> <!-- feature(Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/<channelId>) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/<channelId>)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.channels.ChannelByIdAPI.method_GET_fmds_api_watchable_web_channels_channelId_and_Verify_response_as_OK(ChannelByIdAPI.java:46)
+	at ?.Given method: GET /fmds/api/watchable/web/channels/&lt;channelId&gt; and Verify response as 200 OK(com/comcast/watchable/channels/ChannelsById.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET User&#039;s Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/&lt;videoId&gt;)">
+                  </a> <!-- feature(GET User's Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/<videoId>) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET User's Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/<videoId>)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.users.videos.GETUsersVideos.method_GET_users_videos_id_api(GETUsersVideos.java:38)
+	at ?.Given method: GET users videos id api(com/comcast/watchable/users/UsersVideos/GETUsersVideos.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(ProgressEvent&amp;ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/&lt;vi...)">
+                  </a> <!-- feature(ProgressEvent&ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/<vi...) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(ProgressEvent&ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/<videoId>)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.users.viewHistory.UserViewHistoryDeleteSingle.method_videoProgress_API(UserViewHistoryDeleteSingle.java:35)
+	at ?.Given method: videoProgress API(com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteSingle.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/&lt;videoID&gt;)">
+                  </a> <!-- feature(Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/<videoID>) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/<videoID>)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.videos.VideoByIdAPI.getVideosByIdAPI(VideoByIdAPI.java:50)
+	at ?.Given method: GET videosbyId api(com/comcast/watchable/videos/VideosById.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET User&#039;sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)">
+                  </a> <!-- feature(GET User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.users.viewHistory.GETUserViewHistory.put_Viewhistory_api_gets_executed(GETUserViewHistory.java:31)
+	at ?.When Put Viewhistory api gets executed(com/comcast/watchable/users/UsersViewHistory/GETUserViewHistory.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(DELETE User&#039;sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)">
+                  </a> <!-- feature(DELETE User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(DELETE User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.users.viewHistory.UserViewHistoryDeleteSingle.verify_the_status_code_as(UserViewHistoryDeleteSingle.java:71)
+	at ?.Then verify the status code as 204(com/comcast/watchable/users/UsersViewHistory/UserViewHistoryDeleteAll.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/&lt;publisherId&gt;/channels)">
+                  </a> <!-- feature(Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>/channels) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>/channels)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [200] but found [404]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:372)
+	at org.testng.Assert.assertEquals(Assert.java:382)
+	at com.comcast.watchable.publishers.ChannelsByGenreForPublisher.response_is_OK(ChannelsByGenreForPublisher.java:57)
+	at ?.When response is 200 OK(com/comcast/watchable/publisher/ChannelsByGenreForPublisher.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get PlayBackUri)">
+                  </a> <!-- feature(Get PlayBackUri) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get PlayBackUri)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.videos.VideoPlayBackUriAPI.http_request_headers(VideoPlayBackUriAPI.java:61)
+	at ?.Given HTTP request headers(com/comcast/watchable/videos/VideoPlayBackUri.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum=1&amp;pageSize=2)">
+                  </a> <!-- feature(GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum=1&pageSize=2) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum=1&pageSize=2)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field &quot;pageNum&quot; (Class com.comcast.model.channel.videos.ChannelVideos), not marked as ignorable
+ at [Source: org.apache.http.client.entity.LazyDecompressingInputStream@4b3c354a; line: 1, column: 13] (through reference chain: com.comcast.model.channel.videos.ChannelVideos[&quot;pageNum&quot;])
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field &quot;pageNum&quot; (Class com.comcast.model.channel.videos.ChannelVideos), not marked as ignorable
+ at [Source: org.apache.http.client.entity.LazyDecompressingInputStream@4b3c354a; line: 1, column: 13] (through reference chain: com.comcast.model.channel.videos.ChannelVideos[&quot;pageNum&quot;])
+	at org.codehaus.jackson.map.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:53)
+	at org.codehaus.jackson.map.deser.StdDeserializationContext.unknownFieldException(StdDeserializationContext.java:267)
+	at org.codehaus.jackson.map.deser.std.StdDeserializer.reportUnknownProperty(StdDeserializer.java:673)
+	at org.codehaus.jackson.map.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:659)
+	at org.codehaus.jackson.map.deser.BeanDeserializer.handleUnknownProperty(BeanDeserializer.java:1365)
+	at org.codehaus.jackson.map.deser.BeanDeserializer._handleUnknown(BeanDeserializer.java:725)
+	at org.codehaus.jackson.map.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:703)
+	at org.codehaus.jackson.map.deser.BeanDeserializer.deserialize(BeanDeserializer.java:580)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2732)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1909)
+	at com.comcast.watchable.channels.ChannelsWithPagination.verify_totalItems_attribute(ChannelsWithPagination.java:77)
+	at ?.Then verify totalItems attribute(com/comcast/watchable/channels/ChannelsWithPagination.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get CuratedChannelsAPI&#039;s - fmds/api/{$tenant_id}/{$app_id}/curated/channels)">
+                  </a> <!-- feature(Get CuratedChannelsAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/channels) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get CuratedChannelsAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/channels)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.videos.VideoPlayBackUriAPI.http_request_headers(VideoPlayBackUriAPI.java:61)
+	at ?.Given HTTP request headers(com/comcast/watchable/curated/CuratedChannels.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature([/channels/{channelId}/videos] As a User, view the videos under channel)">
+                  </a> <!-- feature([/channels/{channelId}/videos] As a User, view the videos under channel) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">([/channels/{channelId}/videos] As a User, view the videos under channel)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.comcast.watchable.channels.VideosUnderChannel.request_headers_and_SessionToken(VideosUnderChannel.java:56)
+	at ?.Given request headers and SessionToken(com/comcast/watchable/channels/VideosUnderChannel.feature:6)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum=1&amp;pageSize=2)">
+                  </a> <!-- feature(GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum=1&pageSize=2) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum=1&pageSize=2)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field &quot;pageNum&quot; (Class com.comcast.model.channel.videos.ChannelVideos), not marked as ignorable
+ at [Source: org.apache.http.client.entity.LazyDecompressingInputStream@226642a5; line: 1, column: 13] (through reference chain: com.comcast.model.channel.videos.ChannelVideos[&quot;pageNum&quot;])
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field &quot;pageNum&quot; (Class com.comcast.model.channel.videos.ChannelVideos), not marked as ignorable
+ at [Source: org.apache.http.client.entity.LazyDecompressingInputStream@226642a5; line: 1, column: 13] (through reference chain: com.comcast.model.channel.videos.ChannelVideos[&quot;pageNum&quot;])
+	at org.codehaus.jackson.map.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:53)
+	at org.codehaus.jackson.map.deser.StdDeserializationContext.unknownFieldException(StdDeserializationContext.java:267)
+	at org.codehaus.jackson.map.deser.std.StdDeserializer.reportUnknownProperty(StdDeserializer.java:673)
+	at org.codehaus.jackson.map.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:659)
+	at org.codehaus.jackson.map.deser.BeanDeserializer.handleUnknownProperty(BeanDeserializer.java:1365)
+	at org.codehaus.jackson.map.deser.BeanDeserializer._handleUnknown(BeanDeserializer.java:725)
+	at org.codehaus.jackson.map.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:703)
+	at org.codehaus.jackson.map.deser.BeanDeserializer.deserialize(BeanDeserializer.java:580)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2732)
+	at org.codehaus.jackson.map.ObjectMapper.readValue(ObjectMapper.java:1909)
+	at com.comcast.watchable.videos.VideosWithPagination.validate_for_totalItems_attribute(VideosWithPagination.java:69)
+	at ?.Then Validate for totalItems attribute(com/comcast/watchable/videos/VideosWithPagination.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.comcast.watchable.CucumberRunnerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:season...)">
+                  </a> <!-- feature(Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:season...) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:seasonId/videos)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)">
+                  </a> <!-- feature(GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured)">
+                  </a> <!-- feature(CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/&lt;email&gt;)">
+                  </a> <!-- feature(GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/<email>) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/<email>)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists)">
+                  </a> <!-- feature(Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(fmds/api/{$tenant_id}/{$app_id}/publishers/&lt;publisherId&gt;)">
+                  </a> <!-- feature(fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get CuratedVideosAPI&#039;s - fmds/api/{$tenant_id}/{$app_id}/curated/videos)">
+                  </a> <!-- feature(Get CuratedVideosAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/videos) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get CuratedVideosAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/videos)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres)">
+                  </a> <!-- feature(GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/&lt;username&gt;)">
+                  </a> <!-- feature(GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/<username>) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/<username>)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)">
+                  </a> <!-- feature(POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testApp">
+                  </a> <!-- testApp -->
+                  <span class="method-name">testApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ravindra.parauha\AppData\Local\Temp\testng-eclipse--50500284\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.comcast.watchable.CucumberRunnerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(0, 3, 14457);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(1, 3, 4988);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(2, 3, 2326);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'feature')
+data.setCell(3, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(3, 3, 1282);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'feature')
+data.setCell(4, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(4, 3, 644);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'feature')
+data.setCell(5, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(5, 3, 627);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'feature')
+data.setCell(6, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(6, 3, 625);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'feature')
+data.setCell(7, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(7, 3, 609);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'feature')
+data.setCell(8, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(8, 3, 605);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'feature')
+data.setCell(9, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(9, 3, 600);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'feature')
+data.setCell(10, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(10, 3, 596);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'feature')
+data.setCell(11, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(11, 3, 594);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'feature')
+data.setCell(12, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(12, 3, 592);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'feature')
+data.setCell(13, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(13, 3, 583);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'feature')
+data.setCell(14, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(14, 3, 568);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'feature')
+data.setCell(15, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(15, 3, 31);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'feature')
+data.setCell(16, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(16, 3, 19);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'feature')
+data.setCell(17, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(17, 3, 10);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'feature')
+data.setCell(18, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(18, 3, 9);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'feature')
+data.setCell(19, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(19, 3, 7);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'feature')
+data.setCell(20, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(20, 3, 6);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'feature')
+data.setCell(21, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(21, 3, 4);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'feature')
+data.setCell(22, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(22, 3, 3);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'feature')
+data.setCell(23, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testApp')
+data.setCell(24, 2, 'com.comcast.watchable.CucumberRunnerTest')
+data.setCell(24, 3, 1);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.comcast.watchable.CucumberRunnerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(Get SeasionsforALLVIdeos -  http://fabricdemo.xidio.com/fmds/api/:tenantId/:platform/seasons/:season...)</span>
+                <span class="method-start">578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Get ChannelByIdAPI - fmds/api/{$tenant_id}/{$app_id}/channels/<channelId>)</span>
+                <span class="method-start">598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(GET ChannelsWithPagination - fmds/api/{$tenant_id}/{$app_id}/channels?pageNum=1&pageSize=2)</span>
+                <span class="method-start">5592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature([/channels/{channelId}/videos] As a User, view the videos under channel)</span>
+                <span class="method-start">6193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Get CuratedChannelsAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/channels)</span>
+                <span class="method-start">6229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(CuratedFeatured API - fmds/api/{$tenant_id}/{$app_id}/curated/featured)</span>
+                <span class="method-start">6240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Get CuratedListsAPIs - fmds/api/{$tenant_id}/{$app_id}/curatedlists)</span>
+                <span class="method-start">6244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Get CuratedVideosAPI's - fmds/api/{$tenant_id}/{$app_id}/curated/videos)</span>
+                <span class="method-start">20703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(GET Genres API - fmds/api/{$tenant_id}/{$app_id}/genres)</span>
+                <span class="method-start">21332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Get ChannelsByPublisherAPI - fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>/channels)</span>
+                <span class="method-start">21934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(fmds/api/{$tenant_id}/{$app_id}/publishers/<publisherId>)</span>
+                <span class="method-start">22504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Channel Follow->FollowedChannel->UnFollow - fmds/api/{$tenant_id}/{$app_id}/users/channels/<channelI...)</span>
+                <span class="method-start">23099 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(GET User's Specific video Id details API - fmds/api/{$tenant_id}/{$app_id}/users/videos/<videoId>)</span>
+                <span class="method-start">24385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(GET User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)</span>
+                <span class="method-start">24395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(DELETE User'sViewHistory API - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos)</span>
+                <span class="method-start">24402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(ProgressEvent&ViewHistorySingleDelete - fmds/api/{$tenant_id}/{$app_id}/users/viewhistory/videos/<vi...)</span>
+                <span class="method-start">25015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(GET EmailLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/emails/<email>)</span>
+                <span class="method-start">27344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(GET UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)</span>
+                <span class="method-start">27993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(GET UserNameLookUp API - fmds/api/{$tenant_id}/{$app_id}/users/profile/usernames/<username>)</span>
+                <span class="method-start">28620 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(POST UsersProfile API - fmds/api/{$tenant_id}/{$app_id}/users/profile)</span>
+                <span class="method-start">29235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Get PlayBackUri)</span>
+                <span class="method-start">29239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Get VideoPlaylistAPI - fmds/api/{$tenant_id}/{$app_id}/videos/<videoId>/playlist)</span>
+                <span class="method-start">29249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Get VideoById API - fmds/api/{$tenant_id}/{$app_id}/videos/<videoID>)</span>
+                <span class="method-start">29259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(GET VideoWithPagination - fmds/api/{$tenant_id}/{$app_id}/videos?pageNum=1&pageSize=2)</span>
+                <span class="method-start">29858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testApp</span>
+                <span class="method-start">30448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">30456 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
